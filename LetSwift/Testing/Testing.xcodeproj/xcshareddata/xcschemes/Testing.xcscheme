@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73E6DBC4291169350074C878"
-               BuildableName = "UITesting.framework"
-               BlueprintName = "UITesting"
+               BlueprintIdentifier = "73E6DBB52911691D0074C878"
+               BuildableName = "Testing.framework"
+               BlueprintName = "Testing"
                ReferencedContainer = "container:Testing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73E6DBC4291169350074C878"
-            BuildableName = "UITesting.framework"
-            BlueprintName = "UITesting"
+            BlueprintIdentifier = "73E6DBB52911691D0074C878"
+            BuildableName = "Testing.framework"
+            BlueprintName = "Testing"
             ReferencedContainer = "container:Testing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
