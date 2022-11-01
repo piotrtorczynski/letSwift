@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Brightify/Cuckoo.git",
       "state" : {
-        "revision" : "64b1681e37444d998e9cff2df6537a75695ab638",
-        "version" : "1.9.1"
+        "branch" : "master",
+        "revision" : "8d7b893bc246659e30a443fb5b0d8ffdc3be562b"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/httpswift/swifter.git",
       "state" : {
-        "revision" : "9483a5d459b45c3ffd059f7b55f9638e268632fd",
-        "version" : "1.5.0"
+        "branch" : "stable",
+        "revision" : "1e4f51c92d7ca486242d8bf0722b99de2c3531aa"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nalexn/ViewInspector",
       "state" : {
-        "revision" : "ac7df67c4e0593470eda90a550f8493a81609745",
-        "version" : "0.9.2"
+        "branch" : "master",
+        "revision" : "ac7df67c4e0593470eda90a550f8493a81609745"
       }
     }
   ],

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73E6DB81291160BC0074C878"
-               BuildableName = "LetSwiftUiTests.framework"
-               BlueprintName = "LetSwiftUiTests"
+               BlueprintIdentifier = "73E6DABC291158730074C878"
+               BuildableName = "LetSwiftUITests.xctest"
+               BlueprintName = "LetSwiftUITests"
                ReferencedContainer = "container:LetSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73E6DB81291160BC0074C878"
-            BuildableName = "LetSwiftUiTests.framework"
-            BlueprintName = "LetSwiftUiTests"
+            BlueprintIdentifier = "73E6DABC291158730074C878"
+            BuildableName = "LetSwiftUITests.xctest"
+            BlueprintName = "LetSwiftUITests"
             ReferencedContainer = "container:LetSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

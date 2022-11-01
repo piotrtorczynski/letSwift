@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LetSwift/Testing/Testing.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:LetSwift/LetSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LetSwift/Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LetSwift/Testing/Testing.xcodeproj">
    </FileRef>
 </Workspace>
