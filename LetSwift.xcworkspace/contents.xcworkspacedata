@@ -8,6 +8,9 @@
       location = "group:LetSwift/Core/Core.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:LetSwift/Networking/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LetSwift/Testing/Testing.xcodeproj">
    </FileRef>
 </Workspace>

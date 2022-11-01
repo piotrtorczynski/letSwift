@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		737A20272911ABDC00C0742D /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 737A20262911ABDC00C0742D /* Cuckoo */; };
+		737A202A2911ABEE00C0742D /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 737A20292911ABEE00C0742D /* ViewInspector */; };
+		737A202D2911AC0A00C0742D /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 737A202C2911AC0A00C0742D /* SnapshotTesting */; };
+		737A20352911AC2F00C0742D /* LetSwiftSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */; };
+		737A207B2911B39400C0742D /* WolneLekturyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A207A2911B39400C0742D /* WolneLekturyBuilder.swift */; };
+		737A207D2911B3AD00C0742D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737A207C2911B3AD00C0742D /* Networking.framework */; };
+		737A207E2911B3AD00C0742D /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 737A207C2911B3AD00C0742D /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		737A20822911B4D900C0742D /* AudioBooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20812911B4D900C0742D /* AudioBooksRequest.swift */; };
+		737A20842911B55800C0742D /* BooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20832911B55800C0742D /* BooksRequest.swift */; };
+		737A20862911B57800C0742D /* WolneLekturyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20852911B57800C0742D /* WolneLekturyAPIService.swift */; };
+		737A20892911BAED00C0742D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 737A20882911BAED00C0742D /* Resolver */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
@@ -19,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		737A20362911AC2F00C0742D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73E6DA9A291158720074C878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73E6DAA1291158720074C878;
+			remoteInfo = LetSwift;
+		};
 		73E6DAB4291158730074C878 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 73E6DA9A291158720074C878 /* Project object */;
@@ -42,6 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				737A207E2911B3AD00C0742D /* Networking.framework in Embed Frameworks */,
 				73E6DB0329115ABA0074C878 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,6 +69,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		737A20322911AC2E00C0742D /* LetSwiftSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftSnapshotTests.swift; sourceTree = "<group>"; };
+		737A207A2911B39400C0742D /* WolneLekturyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolneLekturyBuilder.swift; sourceTree = "<group>"; };
+		737A207C2911B3AD00C0742D /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737A20812911B4D900C0742D /* AudioBooksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBooksRequest.swift; sourceTree = "<group>"; };
+		737A20832911B55800C0742D /* BooksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRequest.swift; sourceTree = "<group>"; };
+		737A20852911B57800C0742D /* WolneLekturyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolneLekturyAPIService.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
 		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,11 +92,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		737A202F2911AC2E00C0742D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E6DA9F291158720074C878 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737A20892911BAED00C0742D /* Resolver in Frameworks */,
+				737A20272911ABDC00C0742D /* Cuckoo in Frameworks */,
+				737A202D2911AC0A00C0742D /* SnapshotTesting in Frameworks */,
 				73E6DB0229115ABA0074C878 /* Core.framework in Frameworks */,
+				737A207D2911B3AD00C0742D /* Networking.framework in Frameworks */,
+				737A202A2911ABEE00C0742D /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +129,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		737A20332911AC2F00C0742D /* LetSwiftSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */,
+			);
+			path = LetSwiftSnapshotTests;
+			sourceTree = "<group>";
+		};
+		737A20772911B33800C0742D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				737A20782911B37700C0742D /* WolneLektury */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		737A20782911B37700C0742D /* WolneLektury */ = {
+			isa = PBXGroup;
+			children = (
+				737A20802911B4CC00C0742D /* Requests */,
+				737A207F2911B4B500C0742D /* Services */,
+				737A20792911B38000C0742D /* Builders */,
+			);
+			path = WolneLektury;
+			sourceTree = "<group>";
+		};
+		737A20792911B38000C0742D /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				737A207A2911B39400C0742D /* WolneLekturyBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		737A207F2911B4B500C0742D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				737A20852911B57800C0742D /* WolneLekturyAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		737A20802911B4CC00C0742D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				737A20812911B4D900C0742D /* AudioBooksRequest.swift */,
+				737A20832911B55800C0742D /* BooksRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		73E6DA99291158720074C878 = {
 			isa = PBXGroup;
 			children = (
 				73E6DAA4291158720074C878 /* LetSwift */,
 				73E6DAB6291158730074C878 /* LetSwiftTests */,
 				73E6DAC0291158730074C878 /* LetSwiftUITests */,
+				737A20332911AC2F00C0742D /* LetSwiftSnapshotTests */,
 				73E6DAA3291158720074C878 /* Products */,
 				73E6DB0029115ABA0074C878 /* Frameworks */,
 			);
@@ -108,6 +198,7 @@
 				73E6DAA2291158720074C878 /* LetSwift.app */,
 				73E6DAB3291158730074C878 /* LetSwiftTests.xctest */,
 				73E6DABD291158730074C878 /* LetSwiftUITests.xctest */,
+				737A20322911AC2E00C0742D /* LetSwiftSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +206,7 @@
 		73E6DAA4291158720074C878 /* LetSwift */ = {
 			isa = PBXGroup;
 			children = (
+				737A20772911B33800C0742D /* Networking */,
 				73E6DAA5291158720074C878 /* LetSwiftApp.swift */,
 				73E6DAA7291158720074C878 /* ContentView.swift */,
 				73E6DAA9291158730074C878 /* Assets.xcassets */,
@@ -152,6 +244,7 @@
 		73E6DB0029115ABA0074C878 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				737A207C2911B3AD00C0742D /* Networking.framework */,
 				73E6DBA9291167C60074C878 /* Testing.framework */,
 				73E6DB0129115ABA0074C878 /* Core.framework */,
 			);
@@ -161,6 +254,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		737A20312911AC2E00C0742D /* LetSwiftSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737A20382911AC2F00C0742D /* Build configuration list for PBXNativeTarget "LetSwiftSnapshotTests" */;
+			buildPhases = (
+				737A202E2911AC2E00C0742D /* Sources */,
+				737A202F2911AC2E00C0742D /* Frameworks */,
+				737A20302911AC2E00C0742D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				737A20372911AC2F00C0742D /* PBXTargetDependency */,
+			);
+			name = LetSwiftSnapshotTests;
+			productName = LetSwiftSnapshotTests;
+			productReference = 737A20322911AC2E00C0742D /* LetSwiftSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		73E6DAA1291158720074C878 /* LetSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73E6DAC7291158730074C878 /* Build configuration list for PBXNativeTarget "LetSwift" */;
@@ -175,6 +286,12 @@
 			dependencies = (
 			);
 			name = LetSwift;
+			packageProductDependencies = (
+				737A20262911ABDC00C0742D /* Cuckoo */,
+				737A20292911ABEE00C0742D /* ViewInspector */,
+				737A202C2911AC0A00C0742D /* SnapshotTesting */,
+				737A20882911BAED00C0742D /* Resolver */,
+			);
 			productName = LetSwift;
 			productReference = 73E6DAA2291158720074C878 /* LetSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +342,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					737A20312911AC2E00C0742D = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 73E6DAA1291158720074C878;
+					};
 					73E6DAA1291158720074C878 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -247,18 +368,32 @@
 				Base,
 			);
 			mainGroup = 73E6DA99291158720074C878;
+			packageReferences = (
+				737A20252911ABDC00C0742D /* XCRemoteSwiftPackageReference "Cuckoo" */,
+				737A20282911ABEE00C0742D /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				737A202B2911AC0A00C0742D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				737A20872911BAED00C0742D /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 73E6DAA3291158720074C878 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				73E6DAA1291158720074C878 /* LetSwift */,
 				73E6DAB2291158730074C878 /* LetSwiftTests */,
+				737A20312911AC2E00C0742D /* LetSwiftSnapshotTests */,
 				73E6DABC291158730074C878 /* LetSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		737A20302911AC2E00C0742D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E6DAA0291158720074C878 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,12 +420,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		737A202E2911AC2E00C0742D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737A20352911AC2F00C0742D /* LetSwiftSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E6DA9E291158720074C878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737A20842911B55800C0742D /* BooksRequest.swift in Sources */,
+				737A207B2911B39400C0742D /* WolneLekturyBuilder.swift in Sources */,
 				73E6DAA8291158720074C878 /* ContentView.swift in Sources */,
+				737A20862911B57800C0742D /* WolneLekturyAPIService.swift in Sources */,
 				73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */,
+				737A20822911B4D900C0742D /* AudioBooksRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +461,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		737A20372911AC2F00C0742D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73E6DAA1291158720074C878 /* LetSwift */;
+			targetProxy = 737A20362911AC2F00C0742D /* PBXContainerItemProxy */;
+		};
 		73E6DAB5291158730074C878 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 73E6DAA1291158720074C878 /* LetSwift */;
@@ -327,6 +479,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		737A20392911AC2F00C0742D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YG9DMDHAC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.LetSwiftSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetSwift";
+			};
+			name = Debug;
+		};
+		737A203A2911AC2F00C0742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YG9DMDHAC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.LetSwiftSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetSwift";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		73E6DAC5291158730074C878 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,6 +800,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		737A20382911AC2F00C0742D /* Build configuration list for PBXNativeTarget "LetSwiftSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737A20392911AC2F00C0742D /* Debug */,
+				737A203A2911AC2F00C0742D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73E6DA9D291158720074C878 /* Build configuration list for PBXProject "LetSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -644,6 +846,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		737A20252911ABDC00C0742D /* XCRemoteSwiftPackageReference "Cuckoo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Brightify/Cuckoo.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		737A20282911ABEE00C0742D /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		737A202B2911AC0A00C0742D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+		737A20872911BAED00C0742D /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		737A20262911ABDC00C0742D /* Cuckoo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 737A20252911ABDC00C0742D /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = Cuckoo;
+		};
+		737A20292911ABEE00C0742D /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 737A20282911ABEE00C0742D /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		737A202C2911AC0A00C0742D /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 737A202B2911AC0A00C0742D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		737A20882911BAED00C0742D /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 737A20872911BAED00C0742D /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73E6DA9A291158720074C878 /* Project object */;
 }
