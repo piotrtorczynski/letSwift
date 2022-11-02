@@ -7,14 +7,32 @@
 		<key>LetSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>UITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>737A20312911AC2E00C0742D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73E6DAA1291158720074C878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73E6DAB2291158730074C878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

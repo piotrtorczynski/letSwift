@@ -7,6 +7,7 @@
 
 import Combine
 import Networking
+import Resolver
 
 protocol WolneLekturyAPIServiceProtocol {
     func getEbooks() -> AnyPublisher<[Book], Error>
@@ -15,11 +16,7 @@ protocol WolneLekturyAPIServiceProtocol {
 
 final class WolneLekturyAPIService: WolneLekturyAPIServiceProtocol {
 
-    private let apiClient: APIClient
-
-    init(apiClient: APIClient) {
-        self.apiClient = apiClient
-    }
+    @Injected private var apiClient: APIClient
 
     func getEbooks() -> AnyPublisher<[Book], Error> {
         apiClient.perform(request: BooksRequest())

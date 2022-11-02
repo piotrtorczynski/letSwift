@@ -7,7 +7,20 @@
 		<key>Core.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>73E6DAD9291159A60074C878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73E6DAE3291159A60074C878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

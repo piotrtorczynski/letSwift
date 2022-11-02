@@ -8,6 +8,17 @@
 import Core
 import SwiftUI
 
+@main
+struct AppLauncher {
+    static func main() throws {
+        if CommandLine.isUnitTesting {
+            TestApp.main()
+        } else {
+            LetSwiftApp.main()
+        }
+    }
+}
+
 struct LetSwiftApp: App {
     var body: some Scene {
         WindowGroup {
@@ -19,15 +30,5 @@ struct LetSwiftApp: App {
 struct TestApp: App {
     var body: some Scene {
         WindowGroup { Text("Running Unit Tests") }
-    }
-}
-
-@main struct AppLauncher {
-    static func main() throws {
-        if CommandLine.isUnitTesting {
-            TestApp.main()
-        } else {
-            LetSwiftApp.main()
-        }
     }
 }

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		737A208D2911BEEF00C0742D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737A208C2911BEEF00C0742D /* Core.framework */; };
 		73E6DC2A2911A5A20074C878 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 73E6DC292911A5A20074C878 /* ViewInspector */; };
 		73E6DC2C2911A5A20074C878 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 73E6DC2B2911A5A20074C878 /* SnapshotTesting */; };
 		73E6DC2E2911A5A20074C878 /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 73E6DC2D2911A5A20074C878 /* Cuckoo */; };
 		73E6DC302911A5AE0074C878 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 73E6DC2F2911A5AE0074C878 /* Swifter */; };
 		73E6DC312911A5AE0074C878 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DC152911A5780074C878 /* Testing.framework */; };
-		73E6DC322911A5AE0074C878 /* Testing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DC152911A5780074C878 /* Testing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73E6DC362911A5BA0074C878 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DBCF2911696F0074C878 /* UITestCase.swift */; };
 		73E6DC372911A5BA0074C878 /* XCUIelementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DBD42911696F0074C878 /* XCUIelementExtensions.swift */; };
 		73E6DC382911A5BA0074C878 /* UITestTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DBD02911696F0074C878 /* UITestTimeout.swift */; };
@@ -32,21 +32,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		73E6DC352911A5AE0074C878 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				73E6DC322911A5AE0074C878 /* Testing.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		737A208C2911BEEF00C0742D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DBCF2911696F0074C878 /* UITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
 		73E6DBD02911696F0074C878 /* UITestTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestTimeout.swift; sourceTree = "<group>"; };
 		73E6DBD22911696F0074C878 /* MockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
@@ -66,6 +53,7 @@
 				73E6DC2A2911A5A20074C878 /* ViewInspector in Frameworks */,
 				73E6DC2C2911A5A20074C878 /* SnapshotTesting in Frameworks */,
 				73E6DC2E2911A5A20074C878 /* Cuckoo in Frameworks */,
+				737A208D2911BEEF00C0742D /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +160,7 @@
 		73E6DC282911A5A20074C878 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				737A208C2911BEEF00C0742D /* Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,7 +217,6 @@
 				73E6DC1D2911A5900074C878 /* Sources */,
 				73E6DC1E2911A5900074C878 /* Frameworks */,
 				73E6DC1F2911A5900074C878 /* Resources */,
-				73E6DC352911A5AE0074C878 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,6 +465,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,6 +499,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,6 +534,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,6 +568,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
