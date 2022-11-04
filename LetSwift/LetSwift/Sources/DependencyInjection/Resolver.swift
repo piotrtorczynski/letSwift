@@ -22,7 +22,7 @@ extension Resolver: ResolverRegistering {
     }
 
     private static func registerAPIs() {
-        register { WolneLekturyAPIService() }
-            .implements(WolneLekturyAPIServiceProtocol.self)
+        register { EargastAPIService() }
+            .implements(EargastAPIServiceProtocol.self)
     }
 }

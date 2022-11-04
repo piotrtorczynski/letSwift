@@ -62,7 +62,10 @@ public final class DefaultAPIClient: APIClient {
                 #endif
             })
             .decode(type: T.self, decoder: decoder)
-            .mapError { _ in APIError.noResponse }
+            .mapError { error in
+                print(error)
+                return APIError.noResponse
+            }
             .eraseToAnyPublisher()
     }
 }
