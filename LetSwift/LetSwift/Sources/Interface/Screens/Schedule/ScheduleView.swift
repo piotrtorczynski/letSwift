@@ -59,14 +59,14 @@ struct ScheduleView: View {
 
     @ViewBuilder private func makeUpcomingRacesView() -> some View {
         ForEach(viewModel.upcomingRaces, id: \.date) { race in
-            Text(race.raceName)
+            RaceRow(model: race)
             TableSeparatorView(separatorType: .fullWidth)
         }
     }
 
     @ViewBuilder private func makeFinishedRacesView() -> some View {
         ForEach(viewModel.finishedRaces, id: \.date) { race in
-            Text(race.raceName)
+            RaceRow(model: race)
             TableSeparatorView(separatorType: .fullWidth)
         }
     }

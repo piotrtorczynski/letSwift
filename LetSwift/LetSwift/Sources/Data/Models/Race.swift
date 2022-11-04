@@ -26,4 +26,15 @@ struct Race: Codable {
 struct Circuit: Codable {
     let circuitId: String
     let circuitName: String
+    let location: Location
+
+    enum CodingKeys: String, CodingKey {
+        case circuitId
+        case circuitName
+        case location = "Location"
+    }
+
+    struct Location: Codable {
+        let country: String
+    }
 }

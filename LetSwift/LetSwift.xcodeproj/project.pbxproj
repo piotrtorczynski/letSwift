@@ -33,6 +33,7 @@
 		73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */; };
 		73BB73722915950F0030CBA7 /* CurrentRaceScheduleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */; };
 		73BB7374291599890030CBA7 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7373291599890030CBA7 /* Race.swift */; };
+		73BB73762915A0C00030CBA7 /* RaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73752915A0C00030CBA7 /* RaceRow.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRaceScheduleRequest.swift; sourceTree = "<group>"; };
 		73BB7373291599890030CBA7 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		73BB73752915A0C00030CBA7 /* RaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRow.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
 		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			children = (
 				73BB736D291565D60030CBA7 /* ScheduleView.swift */,
 				73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */,
+				73BB73752915A0C00030CBA7 /* RaceRow.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				73BB736E291565D60030CBA7 /* ScheduleView.swift in Sources */,
 				737A20A72911C6BE00C0742D /* Resolver.swift in Sources */,
 				73BB73632915407E0030CBA7 /* CurrentSeasonRequest.swift in Sources */,
+				73BB73762915A0C00030CBA7 /* RaceRow.swift in Sources */,
 				73E6DAA8291158720074C878 /* ContentView.swift in Sources */,
 				73BB7359291526A10030CBA7 /* TableSeparatorView.swift in Sources */,
 				73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */,

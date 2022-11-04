@@ -11,35 +11,34 @@ struct DriverRow: View {
     var model: DriverStandings
 
     var body: some View {
-        HStack {
-            let imageClipShape = RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+        VStack(spacing: 0) {
+            HStack(spacing: 16) {
+                VStack(spacing: 16) {
+                    makeAvatar(with: model.driver)
+                        .frame(width: 120, height: 120)
+                        .clipped()
+                        .accessibility(hidden: true)
 
-                makeAvatar(with: model.driver)
-                    .frame(width: 120, height: 120)
-                    .clipShape(imageClipShape)
-                    .overlay(imageClipShape.strokeBorder(.quaternary, lineWidth: 0.5))
-                    .accessibility(hidden: true)
+                    Text(model.driver.number)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                }
 
-            VStack(alignment: .leading) {
-                Text(model.driver.name + " " + model.driver.familyName)
-                    .font(.headline)
+                VStack(alignment: .leading) {
+                    Text(model.driver.name + " " + model.driver.familyName)
+                        .font(.headline)
 
-                Text(model.driver.number)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
+                    Text("Score: " + model.points)
+                        .font(.title2)
+                }
 
-                Text(model.points)
-                    .font(.title2)
+                Spacer()
             }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 16)
 
-            Spacer(minLength: 0)
         }
-        .font(.subheadline)
         .accessibilityElement(children: .combine)
-    }
-
-    private var cornerRadius: Double {
-        return 60
     }
 
     @ViewBuilder func makeAvatar(with driver: Driver) -> some View {
