@@ -11,7 +11,7 @@ struct DriverStandingsView: View {
     @StateObject var viewModel: DriverStandingsViewModel
 
     var body: some View {
-        VStack(spacing: 0) {
+        BackgroundView {
             switch viewModel.state {
             case .loading:
                 ProgressView()
@@ -35,7 +35,7 @@ struct DriverStandingsView: View {
         ScrollView {
             VStack(spacing: 0) {
                 ForEach(viewModel.standings, id: \.driver.code) { standing in
-                    BookCell(name: standing.driver.code)
+                    DriverRow(model: standing.driver)
                 }
                 .background(Color.white)
             }

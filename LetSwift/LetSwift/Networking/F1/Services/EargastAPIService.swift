@@ -13,7 +13,6 @@ protocol EargastAPIServiceProtocol {
     func getCurrentDriverStandings() -> AnyPublisher<[DriverStandings], Error>
 }
 
-
 final class EargastAPIService: EargastAPIServiceProtocol {
     @Injected private var apiClient: APIClient
 
@@ -25,6 +24,7 @@ final class EargastAPIService: EargastAPIServiceProtocol {
     }
 
 }
+
 private struct CurrentDriverStandings: Codable {
     let data: MRDAta
 
@@ -83,5 +83,4 @@ struct Driver: Codable {
         case code
         case number = "permanentNumber"
     }
-
 }
