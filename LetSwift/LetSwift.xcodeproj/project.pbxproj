@@ -31,6 +31,8 @@
 		73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736A291565760030CBA7 /* DriverStandings.swift */; };
 		73BB736E291565D60030CBA7 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736D291565D60030CBA7 /* ScheduleView.swift */; };
 		73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */; };
+		73BB73722915950F0030CBA7 /* CurrentRaceScheduleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */; };
+		73BB7374291599890030CBA7 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7373291599890030CBA7 /* Race.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
@@ -104,6 +106,8 @@
 		73BB736A291565760030CBA7 /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
 		73BB736D291565D60030CBA7 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRaceScheduleRequest.swift; sourceTree = "<group>"; };
+		73BB7373291599890030CBA7 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
 		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */,
+				73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				73BB736A291565760030CBA7 /* DriverStandings.swift */,
+				73BB7373291599890030CBA7 /* Race.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BB736529155E840030CBA7 /* BackgroundView.swift in Sources */,
+				73BB7374291599890030CBA7 /* Race.swift in Sources */,
 				73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */,
 				73188E7D291511C100EDCBBC /* TabView.swift in Sources */,
 				737A20A42911C5E500C0742D /* DriverStandingsViewModel.swift in Sources */,
@@ -566,6 +573,7 @@
 				73BB7355291525990030CBA7 /* TryAgainView.swift in Sources */,
 				73BB7360291540320030CBA7 /* EargastBuilder.swift in Sources */,
 				73188E802915120200EDCBBC /* TabViewModel.swift in Sources */,
+				73BB73722915950F0030CBA7 /* CurrentRaceScheduleRequest.swift in Sources */,
 				73BB7357291526880030CBA7 /* BookCell.swift in Sources */,
 				73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */,
 				73BB7367291560D70030CBA7 /* DriverRow.swift in Sources */,

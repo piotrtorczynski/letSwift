@@ -30,7 +30,7 @@ struct DriverStandingsView: View {
             .onAppear {
                 viewModel.getAudioBooks()
             }
-            .navigationTitle("Drivers Standings")
+            .navigationTitle(viewModel.title)
         }
         .navigationViewStyle(.stack)
     }

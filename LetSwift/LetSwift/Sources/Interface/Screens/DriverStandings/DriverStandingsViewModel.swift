@@ -25,7 +25,7 @@ final class DriverStandingsViewModel: ObservableObject {
     @Published var standings: [DriverStandings] = []
 
     var title: String {
-        "Drivers"
+        "Drivers Standings"
     }
 
     func getAudioBooks() {

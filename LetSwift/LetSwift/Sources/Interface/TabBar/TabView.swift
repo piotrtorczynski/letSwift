@@ -17,6 +17,11 @@ struct TabBarView: View {
                     buildTabImage(Image(systemName: "car.circle"))
                     Text("Current Season")
                 }
+            ScheduleView(viewModel: ScheduleViewModel())
+                .tabItem {
+                    buildTabImage(Image(systemName: "calendar.circle"))
+                    Text("Schedule")
+                }
         }
     }
 
