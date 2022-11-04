@@ -28,6 +28,9 @@
 		73BB73632915407E0030CBA7 /* CurrentSeasonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */; };
 		73BB736529155E840030CBA7 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736429155E840030CBA7 /* BackgroundView.swift */; };
 		73BB7367291560D70030CBA7 /* DriverRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7366291560D70030CBA7 /* DriverRow.swift */; };
+		73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736A291565760030CBA7 /* DriverStandings.swift */; };
+		73BB736E291565D60030CBA7 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736D291565D60030CBA7 /* ScheduleView.swift */; };
+		73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
@@ -98,6 +101,9 @@
 		73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSeasonRequest.swift; sourceTree = "<group>"; };
 		73BB736429155E840030CBA7 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		73BB7366291560D70030CBA7 /* DriverRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverRow.swift; sourceTree = "<group>"; };
+		73BB736A291565760030CBA7 /* DriverStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandings.swift; sourceTree = "<group>"; };
+		73BB736D291565D60030CBA7 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
 		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		737A208A2911BC5300C0742D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				73BB7368291565640030CBA7 /* Data */,
 				737A20A52911C6B300C0742D /* DependencyInjection */,
 				737A209E2911C5AC00C0742D /* Interface */,
 				73E6DAA5291158720074C878 /* LetSwiftApp.swift */,
@@ -207,6 +214,7 @@
 		737A209F2911C5B700C0742D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				73BB736C291565C90030CBA7 /* Schedule */,
 				737A20A02911C5BD00C0742D /* DriverStandings */,
 			);
 			path = Screens;
@@ -274,6 +282,31 @@
 				73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		73BB7368291565640030CBA7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				73BB7369291565680030CBA7 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		73BB7369291565680030CBA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73BB736A291565760030CBA7 /* DriverStandings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73BB736C291565C90030CBA7 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				73BB736D291565D60030CBA7 /* ScheduleView.swift */,
+				73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		73E6DA99291158720074C878 = {
@@ -519,13 +552,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BB736529155E840030CBA7 /* BackgroundView.swift in Sources */,
+				73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */,
 				73188E7D291511C100EDCBBC /* TabView.swift in Sources */,
 				737A20A42911C5E500C0742D /* DriverStandingsViewModel.swift in Sources */,
 				73BB735D2915401B0030CBA7 /* EargastAPIService.swift in Sources */,
+				73BB736E291565D60030CBA7 /* ScheduleView.swift in Sources */,
 				737A20A72911C6BE00C0742D /* Resolver.swift in Sources */,
 				73BB73632915407E0030CBA7 /* CurrentSeasonRequest.swift in Sources */,
 				73E6DAA8291158720074C878 /* ContentView.swift in Sources */,
 				73BB7359291526A10030CBA7 /* TableSeparatorView.swift in Sources */,
+				73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */,
 				73BB7353291524A00030CBA7 /* PrimaryButton.swift in Sources */,
 				73BB7355291525990030CBA7 /* TryAgainView.swift in Sources */,
 				73BB7360291540320030CBA7 /* EargastBuilder.swift in Sources */,

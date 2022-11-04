@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mick_schumacher_front.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

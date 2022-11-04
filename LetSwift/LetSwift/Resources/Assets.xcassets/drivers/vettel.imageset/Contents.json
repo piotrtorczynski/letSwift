@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vettel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

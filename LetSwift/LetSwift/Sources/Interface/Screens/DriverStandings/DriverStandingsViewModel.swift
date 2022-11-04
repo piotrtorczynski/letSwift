@@ -30,6 +30,7 @@ final class DriverStandingsViewModel: ObservableObject {
 
     func getAudioBooks() {
         state = .loading
+
         api.getCurrentDriverStandings()
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in

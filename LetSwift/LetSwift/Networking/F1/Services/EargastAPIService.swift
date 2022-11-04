@@ -22,7 +22,6 @@ final class EargastAPIService: EargastAPIServiceProtocol {
             .map { $0.data.standings.standingsLists.first?.driverStandings ?? [] }
             .eraseToAnyPublisher()
     }
-
 }
 
 private struct CurrentDriverStandings: Codable {
@@ -54,33 +53,5 @@ private struct CurrentDriverStandings: Codable {
                 }
             }
         }
-    }
-}
-
-struct DriverStandings: Codable {
-    let position: String
-    let points: String
-    let wins: String
-    let driver: Driver
-
-    private enum CodingKeys: String, CodingKey {
-        case position
-        case points
-        case wins
-        case driver = "Driver"
-    }
-}
-
-struct Driver: Codable {
-    let name: String
-    let familyName: String
-    let code: String
-    let number: String
-
-    private enum CodingKeys: String, CodingKey {
-        case name = "givenName"
-        case familyName
-        case code
-        case number = "permanentNumber"
     }
 }

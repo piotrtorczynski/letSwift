@@ -8,27 +8,28 @@
 import SwiftUI
 
 struct DriverRow: View {
-    var model: Driver
+    var model: DriverStandings
 
     var body: some View {
-        HStack(alignment: .top) {
+        HStack {
             let imageClipShape = RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-            makeAvatar(with: model)
-                .frame(width: 60, height: 60)
-                .clipShape(imageClipShape)
-                .overlay(imageClipShape.strokeBorder(.quaternary, lineWidth: 0.5))
-                .accessibility(hidden: true)
+
+                makeAvatar(with: model.driver)
+                    .frame(width: 120, height: 120)
+                    .clipShape(imageClipShape)
+                    .overlay(imageClipShape.strokeBorder(.quaternary, lineWidth: 0.5))
+                    .accessibility(hidden: true)
 
             VStack(alignment: .leading) {
-                Text(model.name)
+                Text(model.driver.name + " " + model.driver.familyName)
                     .font(.headline)
 
-                Text(model.familyName)
-                    .lineLimit(2)
-
-                Text(model.number)
+                Text(model.driver.number)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
+
+                Text(model.points)
+                    .font(.title2)
             }
 
             Spacer(minLength: 0)
@@ -37,31 +38,11 @@ struct DriverRow: View {
         .accessibilityElement(children: .combine)
     }
 
-    var cornerRadius: Double {
-        #if os(iOS)
-        return 10
-        #else
-        return 4
-        #endif
+    private var cornerRadius: Double {
+        return 60
     }
 
     @ViewBuilder func makeAvatar(with driver: Driver) -> some View {
-        if let initials = makeInitials(for: driver) {
-            ZStack {
-                Circle()
-                    .fill(Color.blue)
-                    .frame(width: 56, height: 56)
-                Text(initials)
-                    .font(.title2)
-                    .foregroundColor(Color.white)
-            }
-        }
+        Image(driver.driverId)
     }
-
-    private func makeInitials(for driver: Driver) -> String? {
-        guard let first = driver.name.first,
-              let last = driver.familyName.first else { return nil }
-        return (String(first) + String(last)).uppercased()
-    }
-
 }
