@@ -53,6 +53,8 @@
 		73E6DB0229115ABA0074C878 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; };
 		73E6DB0329115ABA0074C878 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */; };
+		73F5ABDE29171331008F7BC0 /* ScheduleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */; };
+		73F5ABE02917164A008F7BC0 /* InspectableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,8 @@
 		73E6DB0129115ABA0074C878 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DBA9291167C60074C878 /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewTests.swift; sourceTree = "<group>"; };
+		73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectableExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,7 +395,8 @@
 		73BB73912916D37E0030CBA7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				73BB73922916D3EB0030CBA7 /* Networking */,
+				73F5ABDB29171304008F7BC0 /* Unit */,
+				73F5ABDC2917130C008F7BC0 /* ViewTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -469,6 +474,23 @@
 				73E6DB0129115ABA0074C878 /* Core.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73F5ABDB29171304008F7BC0 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73922916D3EB0030CBA7 /* Networking */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		73F5ABDC2917130C008F7BC0 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */,
+				73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */,
+			);
+			path = ViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,10 +732,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BB7396291703E00030CBA7 /* DriverStatusRequestTests.swift in Sources */,
+				73F5ABE02917164A008F7BC0 /* InspectableExtension.swift in Sources */,
 				73BB7398291705C00030CBA7 /* EargastBuilderTests.swift in Sources */,
 				73BB73942916D3F90030CBA7 /* EargastAPIServiceTests.swift in Sources */,
 				73BB739F29170CC20030CBA7 /* APIClientTests.swift in Sources */,
 				73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */,
+				73F5ABDE29171331008F7BC0 /* ScheduleViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,14 +37,17 @@ struct DriverRow: View {
                     Text(model.driver.number)
                         .foregroundStyle(.secondary)
                         .lineLimit(1)
+                        .id("driver_number")
                 }
 
                 VStack(alignment: .leading) {
                     Text(model.driver.name + " " + model.driver.familyName)
                         .font(.headline)
+                        .id("driver_name")
 
                     Text("Score: " + model.points)
                         .font(.title2)
+                        .id("driver_score")
                 }
 
                 Spacer()
@@ -58,5 +61,6 @@ struct DriverRow: View {
 
     @ViewBuilder func makeAvatar(with driver: Driver) -> some View {
         Image(driver.driverId)
+            .id("driver_image")
     }
 }
