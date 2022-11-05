@@ -25,11 +25,11 @@ public struct BackgroundView<Content>: View where Content: View {
 
             if #available(iOS 16.0, *) {
                 content
-                    .id("BackgroundView")
+                    .id("background_view")
                     .scrollContentBackground(.hidden)
             } else {
                 content
-                    .id("BackgroundView")
+                    .id("background_view")
             }
 
         }

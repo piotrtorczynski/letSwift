@@ -15,6 +15,7 @@ extension Resolver: ResolverRegistering {
         guard !CommandLine.isUnitTesting else { return }
         registerNetworking()
         registerAPIs()
+        registerNaviation()
     }
 
     private static func registerNetworking() {
@@ -24,5 +25,9 @@ extension Resolver: ResolverRegistering {
     private static func registerAPIs() {
         register { EargastAPIService() }
             .implements(EargastAPIServiceProtocol.self)
+    }
+
+    private static func registerNaviation() {
+        register { ViewFactory() }
     }
 }

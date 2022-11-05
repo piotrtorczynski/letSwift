@@ -21,14 +21,11 @@ struct DriverStandingsView: View {
                         .id("circlural_view")
                 case .error(let error):
                     TryAgainErrorView(title: error.localizedDescription) {
-                        viewModel.getAudioBooks()
+                        viewModel.getStandings()
                     }
                 case .loaded:
                     makeList()
                 }
-            }
-            .onAppear {
-                viewModel.getAudioBooks()
             }
             .navigationTitle(viewModel.title)
         }
@@ -39,10 +36,17 @@ struct DriverStandingsView: View {
         ScrollView {
             VStack(spacing: 0) {
                 ForEach(viewModel.standings, id: \.driver.code) { standing in
-                    DriverRow(model: standing)
+                    DriverRow(model: standing) {
+                        viewModel.destination = .driverStatus(standing.driver)
+                    }
                     TableSeparatorView(separatorType: .fullWidth)
                 }
                 .background(Color.white)
+
+                NavigationLink(
+                    destination: viewModel.viewFactory.view(for: viewModel.destination),
+                    isActive: $viewModel.isShowingDetails,
+                    label: { EmptyView() })
             }
         }
     }

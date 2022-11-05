@@ -10,7 +10,22 @@ import SwiftUI
 struct DriverRow: View {
     var model: DriverStandings
 
+    var onTap: (() -> Void)?
+
     var body: some View {
+        if let onTap = onTap {
+            Button {
+                onTap()
+            } label: {
+                makeContentView()
+            }
+            .id("button")
+        } else {
+            makeContentView()
+        }
+    }
+
+    @ViewBuilder func makeContentView() -> some View {
         VStack(spacing: 0) {
             HStack(spacing: 16) {
                 VStack(spacing: 16) {

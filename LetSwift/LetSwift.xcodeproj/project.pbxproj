@@ -21,7 +21,6 @@
 		737A20A72911C6BE00C0742D /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20A62911C6BE00C0742D /* Resolver.swift */; };
 		73BB7353291524A00030CBA7 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7352291524A00030CBA7 /* PrimaryButton.swift */; };
 		73BB7355291525990030CBA7 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7354291525990030CBA7 /* TryAgainView.swift */; };
-		73BB7357291526880030CBA7 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7356291526880030CBA7 /* BookCell.swift */; };
 		73BB7359291526A10030CBA7 /* TableSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7358291526A10030CBA7 /* TableSeparatorView.swift */; };
 		73BB735D2915401B0030CBA7 /* EargastAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB735C2915401B0030CBA7 /* EargastAPIService.swift */; };
 		73BB7360291540320030CBA7 /* EargastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB735F291540320030CBA7 /* EargastBuilder.swift */; };
@@ -34,6 +33,13 @@
 		73BB73722915950F0030CBA7 /* CurrentRaceScheduleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */; };
 		73BB7374291599890030CBA7 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7373291599890030CBA7 /* Race.swift */; };
 		73BB73762915A0C00030CBA7 /* RaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73752915A0C00030CBA7 /* RaceRow.swift */; };
+		73BB73792915A74E0030CBA7 /* DriverStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73782915A74E0030CBA7 /* DriverStatusView.swift */; };
+		73BB737B2915A7550030CBA7 /* DriverStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB737A2915A7550030CBA7 /* DriverStatusViewModel.swift */; };
+		73BB737D2915A7610030CBA7 /* DriveerStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB737C2915A7610030CBA7 /* DriveerStatusRequest.swift */; };
+		73BB737F2915A7F50030CBA7 /* DriverStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB737E2915A7F50030CBA7 /* DriverStatus.swift */; };
+		73BB73822915AC550030CBA7 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73812915AC550030CBA7 /* NavigationDestination.swift */; };
+		73BB73842915AC790030CBA7 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73832915AC790030CBA7 /* ViewFactory.swift */; };
+		73BB73862916BE2C0030CBA7 /* DriverAttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73852916BE2C0030CBA7 /* DriverAttendanceView.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
@@ -97,7 +103,6 @@
 		737A20A62911C6BE00C0742D /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		73BB7352291524A00030CBA7 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		73BB7354291525990030CBA7 /* TryAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
-		73BB7356291526880030CBA7 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		73BB7358291526A10030CBA7 /* TableSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSeparatorView.swift; sourceTree = "<group>"; };
 		73BB735C2915401B0030CBA7 /* EargastAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EargastAPIService.swift; sourceTree = "<group>"; };
 		73BB735F291540320030CBA7 /* EargastBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EargastBuilder.swift; sourceTree = "<group>"; };
@@ -110,6 +115,13 @@
 		73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRaceScheduleRequest.swift; sourceTree = "<group>"; };
 		73BB7373291599890030CBA7 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		73BB73752915A0C00030CBA7 /* RaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRow.swift; sourceTree = "<group>"; };
+		73BB73782915A74E0030CBA7 /* DriverStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStatusView.swift; sourceTree = "<group>"; };
+		73BB737A2915A7550030CBA7 /* DriverStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStatusViewModel.swift; sourceTree = "<group>"; };
+		73BB737C2915A7610030CBA7 /* DriveerStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveerStatusRequest.swift; sourceTree = "<group>"; };
+		73BB737E2915A7F50030CBA7 /* DriverStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStatus.swift; sourceTree = "<group>"; };
+		73BB73812915AC550030CBA7 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
+		73BB73832915AC790030CBA7 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		73BB73852916BE2C0030CBA7 /* DriverAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAttendanceView.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
 		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,8 +232,9 @@
 		737A209F2911C5B700C0742D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				73BB736C291565C90030CBA7 /* Schedule */,
 				737A20A02911C5BD00C0742D /* DriverStandings */,
+				73BB73772915A7360030CBA7 /* DriverStatus */,
+				73BB736C291565C90030CBA7 /* Schedule */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -247,11 +260,11 @@
 		73BB73512915248C0030CBA7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				73BB7356291526880030CBA7 /* BookCell.swift */,
+				73BB736429155E840030CBA7 /* BackgroundView.swift */,
+				73BB73852916BE2C0030CBA7 /* DriverAttendanceView.swift */,
 				73BB7352291524A00030CBA7 /* PrimaryButton.swift */,
 				73BB7358291526A10030CBA7 /* TableSeparatorView.swift */,
 				73BB7354291525990030CBA7 /* TryAgainView.swift */,
-				73BB736429155E840030CBA7 /* BackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +300,7 @@
 			children = (
 				73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */,
 				73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */,
+				73BB737C2915A7610030CBA7 /* DriveerStatusRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -294,6 +308,7 @@
 		73BB7368291565640030CBA7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				73BB73802915AC4B0030CBA7 /* Navigation */,
 				73BB7369291565680030CBA7 /* Models */,
 			);
 			path = Data;
@@ -304,6 +319,7 @@
 			children = (
 				73BB736A291565760030CBA7 /* DriverStandings.swift */,
 				73BB7373291599890030CBA7 /* Race.swift */,
+				73BB737E2915A7F50030CBA7 /* DriverStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,6 +332,24 @@
 				73BB73752915A0C00030CBA7 /* RaceRow.swift */,
 			);
 			path = Schedule;
+			sourceTree = "<group>";
+		};
+		73BB73772915A7360030CBA7 /* DriverStatus */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73782915A74E0030CBA7 /* DriverStatusView.swift */,
+				73BB737A2915A7550030CBA7 /* DriverStatusViewModel.swift */,
+			);
+			path = DriverStatus;
+			sourceTree = "<group>";
+		};
+		73BB73802915AC4B0030CBA7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73812915AC550030CBA7 /* NavigationDestination.swift */,
+				73BB73832915AC790030CBA7 /* ViewFactory.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		73E6DA99291158720074C878 = {
@@ -562,9 +596,12 @@
 			files = (
 				73BB736529155E840030CBA7 /* BackgroundView.swift in Sources */,
 				73BB7374291599890030CBA7 /* Race.swift in Sources */,
+				73BB73792915A74E0030CBA7 /* DriverStatusView.swift in Sources */,
 				73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */,
 				73188E7D291511C100EDCBBC /* TabView.swift in Sources */,
+				73BB737D2915A7610030CBA7 /* DriveerStatusRequest.swift in Sources */,
 				737A20A42911C5E500C0742D /* DriverStandingsViewModel.swift in Sources */,
+				73BB73822915AC550030CBA7 /* NavigationDestination.swift in Sources */,
 				73BB735D2915401B0030CBA7 /* EargastAPIService.swift in Sources */,
 				73BB736E291565D60030CBA7 /* ScheduleView.swift in Sources */,
 				737A20A72911C6BE00C0742D /* Resolver.swift in Sources */,
@@ -576,12 +613,15 @@
 				73BB7353291524A00030CBA7 /* PrimaryButton.swift in Sources */,
 				73BB7355291525990030CBA7 /* TryAgainView.swift in Sources */,
 				73BB7360291540320030CBA7 /* EargastBuilder.swift in Sources */,
+				73BB73842915AC790030CBA7 /* ViewFactory.swift in Sources */,
 				73188E802915120200EDCBBC /* TabViewModel.swift in Sources */,
+				73BB737B2915A7550030CBA7 /* DriverStatusViewModel.swift in Sources */,
 				73BB73722915950F0030CBA7 /* CurrentRaceScheduleRequest.swift in Sources */,
-				73BB7357291526880030CBA7 /* BookCell.swift in Sources */,
+				73BB737F2915A7F50030CBA7 /* DriverStatus.swift in Sources */,
 				73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */,
 				73BB7367291560D70030CBA7 /* DriverRow.swift in Sources */,
 				737A20A22911C5D100C0742D /* DriverStandingsView.swift in Sources */,
+				73BB73862916BE2C0030CBA7 /* DriverAttendanceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

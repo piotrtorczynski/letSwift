@@ -12,6 +12,7 @@ import SwiftUI
 final class DriverStandingsViewModel: ObservableObject {
 
     @Injected var api: EargastAPIServiceProtocol
+    @Injected var viewFactory: ViewFactory
 
     enum State {
         case loading, error(Error), loaded
@@ -23,12 +24,23 @@ final class DriverStandingsViewModel: ObservableObject {
 
     @Published var state: State = .loading
     @Published var standings: [DriverStandings] = []
+    @Published var isShowingDetails: Bool = false
+
+    @Published var destination: NavigationDestination = .empty {
+        didSet {
+            isShowingDetails = destination != .empty
+        }
+    }
+
+    init() {
+        getStandings()
+    }
 
     var title: String {
         "Drivers Standings"
     }
 
-    func getAudioBooks() {
+    func getStandings() {
         state = .loading
 
         api.getCurrentDriverStandings()

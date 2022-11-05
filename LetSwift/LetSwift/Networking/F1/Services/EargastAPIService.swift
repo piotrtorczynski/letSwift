@@ -12,6 +12,7 @@ import Resolver
 protocol EargastAPIServiceProtocol {
     func getCurrentDriverStandings() -> AnyPublisher<[DriverStandings], Error>
     func getCurrentSchedule() -> AnyPublisher<[Race], Error>
+    func getDriverStatus(driverId: String) -> AnyPublisher<DriverStatus, Error>
 }
 
 final class EargastAPIService: EargastAPIServiceProtocol {
@@ -28,6 +29,13 @@ final class EargastAPIService: EargastAPIServiceProtocol {
         let request: AnyPublisher<CurrentRaceSchedule, Error> = apiClient.perform(request: CurrentRaceScheduleRequest())
         return request
             .map { $0.data.raceTable.races }
+            .eraseToAnyPublisher()
+    }
+
+    func getDriverStatus(driverId: String) -> AnyPublisher<DriverStatus, Error> {
+        let request: AnyPublisher<DriverStatusResponse, Error> = apiClient.perform(request: DriveerStatusRequest(driverId: driverId))
+        return request
+            .map { $0.data.statusTable }
             .eraseToAnyPublisher()
     }
 }
@@ -88,3 +96,18 @@ private struct CurrentRaceSchedule: Codable {
     }
 }
 
+private struct DriverStatusResponse: Codable {
+    let data: MRDAta
+
+    enum CodingKeys: String, CodingKey {
+        case data = "MRData"
+    }
+
+    struct MRDAta: Codable {
+        let statusTable: DriverStatus
+
+        enum CodingKeys: String, CodingKey {
+            case statusTable = "StatusTable"
+        }
+    }
+}
