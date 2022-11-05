@@ -8,6 +8,7 @@
 import Networking
 
 struct CurrentSeasonRequest: APIRequest {
+    typealias ReturnType = CurrentDriverStandings
     var urlBuilder: Networking.APIURLBuilder { EargastBuilder() }
 
     var path: String { "current/driverStandings.json" }

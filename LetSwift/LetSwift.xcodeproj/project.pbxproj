@@ -40,14 +40,19 @@
 		73BB73822915AC550030CBA7 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73812915AC550030CBA7 /* NavigationDestination.swift */; };
 		73BB73842915AC790030CBA7 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73832915AC790030CBA7 /* ViewFactory.swift */; };
 		73BB73862916BE2C0030CBA7 /* DriverAttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73852916BE2C0030CBA7 /* DriverAttendanceView.swift */; };
+		73BB738C2916CED10030CBA7 /* CuckooMocks.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 73BB738A2916CED10030CBA7 /* CuckooMocks.xcfilelist */; };
+		73BB738D2916CED10030CBA7 /* cuckoo-generate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 73BB738B2916CED10030CBA7 /* cuckoo-generate.rb */; };
+		73BB73942916D3F90030CBA7 /* EargastAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB73932916D3F90030CBA7 /* EargastAPIServiceTests.swift */; };
+		73BB7396291703E00030CBA7 /* DriverStatusRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7395291703E00030CBA7 /* DriverStatusRequestTests.swift */; };
+		73BB7398291705C00030CBA7 /* EargastBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7397291705C00030CBA7 /* EargastBuilderTests.swift */; };
+		73BB739F29170CC20030CBA7 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB739E29170CC20030CBA7 /* APIClientTests.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
-		73E6DAA8291158720074C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA7291158720074C878 /* ContentView.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
-		73E6DAB8291158730074C878 /* LetSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAB7291158730074C878 /* LetSwiftTests.swift */; };
 		73E6DAC2291158730074C878 /* LetSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAC1291158730074C878 /* LetSwiftUITests.swift */; };
 		73E6DAC4291158730074C878 /* LetSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAC3291158730074C878 /* LetSwiftUITestsLaunchTests.swift */; };
 		73E6DB0229115ABA0074C878 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; };
 		73E6DB0329115ABA0074C878 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,18 +127,23 @@
 		73BB73812915AC550030CBA7 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		73BB73832915AC790030CBA7 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		73BB73852916BE2C0030CBA7 /* DriverAttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAttendanceView.swift; sourceTree = "<group>"; };
+		73BB738A2916CED10030CBA7 /* CuckooMocks.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = CuckooMocks.xcfilelist; sourceTree = "<group>"; };
+		73BB738B2916CED10030CBA7 /* cuckoo-generate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = "cuckoo-generate.rb"; sourceTree = "<group>"; };
+		73BB73932916D3F90030CBA7 /* EargastAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EargastAPIServiceTests.swift; sourceTree = "<group>"; };
+		73BB7395291703E00030CBA7 /* DriverStatusRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStatusRequestTests.swift; sourceTree = "<group>"; };
+		73BB7397291705C00030CBA7 /* EargastBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EargastBuilderTests.swift; sourceTree = "<group>"; };
+		73BB739E29170CC20030CBA7 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		73E6DAA2291158720074C878 /* LetSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAA5291158720074C878 /* LetSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftApp.swift; sourceTree = "<group>"; };
-		73E6DAA7291158720074C878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73E6DAA9291158730074C878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E6DAAB291158730074C878 /* LetSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetSwift.entitlements; sourceTree = "<group>"; };
 		73E6DAB3291158730074C878 /* LetSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73E6DAB7291158730074C878 /* LetSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftTests.swift; sourceTree = "<group>"; };
 		73E6DABD291158730074C878 /* LetSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DAC1291158730074C878 /* LetSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftUITests.swift; sourceTree = "<group>"; };
 		73E6DAC3291158730074C878 /* LetSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73E6DB0129115ABA0074C878 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DBA9291167C60074C878 /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,9 +252,9 @@
 		737A20A02911C5BD00C0742D /* DriverStandings */ = {
 			isa = PBXGroup;
 			children = (
+				73BB7366291560D70030CBA7 /* DriverRow.swift */,
 				737A20A12911C5D100C0742D /* DriverStandingsView.swift */,
 				737A20A32911C5E400C0742D /* DriverStandingsViewModel.swift */,
-				73BB7366291560D70030CBA7 /* DriverRow.swift */,
 			);
 			path = DriverStandings;
 			sourceTree = "<group>";
@@ -272,8 +282,8 @@
 		73BB735A29153FB90030CBA7 /* F1 */ = {
 			isa = PBXGroup;
 			children = (
-				73BB7361291540700030CBA7 /* Requests */,
 				73BB735E291540210030CBA7 /* Builders */,
+				73BB7361291540700030CBA7 /* Requests */,
 				73BB735B2915400E0030CBA7 /* Services */,
 			);
 			path = F1;
@@ -298,8 +308,8 @@
 		73BB7361291540700030CBA7 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */,
 				73BB73712915950F0030CBA7 /* CurrentRaceScheduleRequest.swift */,
+				73BB73622915407E0030CBA7 /* CurrentSeasonRequest.swift */,
 				73BB737C2915A7610030CBA7 /* DriveerStatusRequest.swift */,
 			);
 			path = Requests;
@@ -318,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				73BB736A291565760030CBA7 /* DriverStandings.swift */,
-				73BB7373291599890030CBA7 /* Race.swift */,
 				73BB737E2915A7F50030CBA7 /* DriverStatus.swift */,
+				73BB7373291599890030CBA7 /* Race.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,9 +337,9 @@
 		73BB736C291565C90030CBA7 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				73BB73752915A0C00030CBA7 /* RaceRow.swift */,
 				73BB736D291565D60030CBA7 /* ScheduleView.swift */,
 				73BB736F291565DE0030CBA7 /* ScheduleViewModel.swift */,
-				73BB73752915A0C00030CBA7 /* RaceRow.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -350,6 +360,51 @@
 				73BB73832915AC790030CBA7 /* ViewFactory.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		73BB73872916CE940030CBA7 /* Cuckoo */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73892916CEA30030CBA7 /* Build */,
+				73BB73882916CE9E0030CBA7 /* Mocks */,
+			);
+			path = Cuckoo;
+			sourceTree = "<group>";
+		};
+		73BB73882916CE9E0030CBA7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		73BB73892916CEA30030CBA7 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				73BB738B2916CED10030CBA7 /* cuckoo-generate.rb */,
+				73BB738A2916CED10030CBA7 /* CuckooMocks.xcfilelist */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		73BB73912916D37E0030CBA7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73922916D3EB0030CBA7 /* Networking */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		73BB73922916D3EB0030CBA7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				73BB73932916D3F90030CBA7 /* EargastAPIServiceTests.swift */,
+				73BB7395291703E00030CBA7 /* DriverStatusRequestTests.swift */,
+				73BB7397291705C00030CBA7 /* EargastBuilderTests.swift */,
+				73BB739E29170CC20030CBA7 /* APIClientTests.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		73E6DA99291158720074C878 = {
@@ -381,7 +436,6 @@
 				737A208B2911BC6900C0742D /* Resources */,
 				737A208A2911BC5300C0742D /* Sources */,
 				737A20772911B33800C0742D /* Networking */,
-				73E6DAA7291158720074C878 /* ContentView.swift */,
 			);
 			path = LetSwift;
 			sourceTree = "<group>";
@@ -389,7 +443,8 @@
 		73E6DAB6291158730074C878 /* LetSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				73E6DAB7291158730074C878 /* LetSwiftTests.swift */,
+				73BB73912916D37E0030CBA7 /* Tests */,
+				73BB73872916CE940030CBA7 /* Cuckoo */,
 			);
 			path = LetSwiftTests;
 			sourceTree = "<group>";
@@ -464,6 +519,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73E6DACA291158730074C878 /* Build configuration list for PBXNativeTarget "LetSwiftTests" */;
 			buildPhases = (
+				73BB738E2916CF7F0030CBA7 /* Cuckoo */,
 				73E6DAAF291158730074C878 /* Sources */,
 				73E6DAB0291158730074C878 /* Frameworks */,
 				73E6DAB1291158730074C878 /* Resources */,
@@ -569,6 +625,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BB738D2916CED10030CBA7 /* cuckoo-generate.rb in Resources */,
+				73BB738C2916CED10030CBA7 /* CuckooMocks.xcfilelist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +638,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73BB738E2916CF7F0030CBA7 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PROJECT_DIR}/LetSwiftTests/Cuckoo/Build/CuckooMocks.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${PROJECT_DIR}/LetSwiftTests/Cuckoo/Mocks/GeneratedMocks.swift'",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $ACTION != \"indexbuild\" ]; then\n    $PROJECT_DIR/LetSwiftTests/Cuckoo/Build/cuckoo-generate.rb\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		737A202E2911AC2E00C0742D /* Sources */ = {
@@ -607,7 +688,6 @@
 				737A20A72911C6BE00C0742D /* Resolver.swift in Sources */,
 				73BB73632915407E0030CBA7 /* CurrentSeasonRequest.swift in Sources */,
 				73BB73762915A0C00030CBA7 /* RaceRow.swift in Sources */,
-				73E6DAA8291158720074C878 /* ContentView.swift in Sources */,
 				73BB7359291526A10030CBA7 /* TableSeparatorView.swift in Sources */,
 				73BB7370291565DE0030CBA7 /* ScheduleViewModel.swift in Sources */,
 				73BB7353291524A00030CBA7 /* PrimaryButton.swift in Sources */,
@@ -629,7 +709,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E6DAB8291158730074C878 /* LetSwiftTests.swift in Sources */,
+				73BB7396291703E00030CBA7 /* DriverStatusRequestTests.swift in Sources */,
+				73BB7398291705C00030CBA7 /* EargastBuilderTests.swift in Sources */,
+				73BB73942916D3F90030CBA7 /* EargastAPIServiceTests.swift in Sources */,
+				73BB739F29170CC20030CBA7 /* APIClientTests.swift in Sources */,
+				73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

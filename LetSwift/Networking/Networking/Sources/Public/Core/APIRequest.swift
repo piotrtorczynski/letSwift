@@ -8,6 +8,8 @@ public enum HTTPMethod: String {
 }
 
 public protocol APIRequest {
+    /// Return Type
+    associatedtype ReturnType: Codable
     
     /// HTTP method
     var method: HTTPMethod { get }
@@ -36,7 +38,7 @@ public extension APIRequest {
     
     var headers: [String: String] { return [:] }
 
-    var requiresAuthorization: Bool { return true }
+    var requiresAuthorization: Bool { return false }
 }
 
 extension APIRequest {

@@ -20,6 +20,7 @@
 		737A20732911AF3C00C0742D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A206A2911AF3C00C0742D /* APIRequest.swift */; };
 		737A20742911AF3C00C0742D /* DefaultAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A206B2911AF3C00C0742D /* DefaultAPIClient.swift */; };
 		737A20762911B30900C0742D /* DefaultDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20752911B30900C0742D /* DefaultDecoder.swift */; };
+		73BB739A291706DE0030CBA7 /* URLRequestSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7399291706DE0030CBA7 /* URLRequestSending.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		737A206A2911AF3C00C0742D /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		737A206B2911AF3C00C0742D /* DefaultAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAPIClient.swift; sourceTree = "<group>"; };
 		737A20752911B30900C0742D /* DefaultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDecoder.swift; sourceTree = "<group>"; };
+		73BB7399291706DE0030CBA7 /* URLRequestSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestSending.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				737A20692911AF3C00C0742D /* APIQueryParameter.swift */,
 				737A206A2911AF3C00C0742D /* APIRequest.swift */,
 				737A20752911B30900C0742D /* DefaultDecoder.swift */,
+				73BB7399291706DE0030CBA7 /* URLRequestSending.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				737A20712911AF3C00C0742D /* APIURLBuilder.swift in Sources */,
 				737A206C2911AF3C00C0742D /* Foundation.URLComponents.swift in Sources */,
+				73BB739A291706DE0030CBA7 /* URLRequestSending.swift in Sources */,
 				737A20722911AF3C00C0742D /* APIQueryParameter.swift in Sources */,
 				737A206D2911AF3C00C0742D /* Foundation.URLRequest.swift in Sources */,
 				737A20762911B30900C0742D /* DefaultDecoder.swift in Sources */,

@@ -9,7 +9,6 @@ import Foundation
 import XCTest
 
 open class TestCase: XCTestCase {
-
     public static let timeoutDuration: TimeInterval = 5.0
 
 }

@@ -4,23 +4,23 @@ import Combine
 public final class DefaultAPIClient: APIClient {
     // MARK: Properties
     
-    private var session: URLSession
+    private var session: URLRequestSending
     
     // MARK: Initializers
 
-    public init(session: URLSession = .shared) {
+    public init(session: URLRequestSending) {
         self.session = session
     }
 
     // MARK: APIClient
 
-    public func perform<T: Decodable>(request: APIRequest, _ decoder: JSONDecoder = DefaultDecoder()) -> AnyPublisher<T, Error> {
+    public func perform<T: APIRequest>(request: T, _ decoder: JSONDecoder = DefaultDecoder()) -> AnyPublisher<T.ReturnType, Error> {
         return send(request: request, decoder)
     }
     
     // MARK: Private
 
-    private func send<T: Decodable>(request: APIRequest, _ decoder: JSONDecoder) -> AnyPublisher<T, Error>{
+    private func send<T: APIRequest>(request: T, _ decoder: JSONDecoder = DefaultDecoder()) -> AnyPublisher<T.ReturnType, Error> {
         var urlRequest: URLRequest
         if request.requiresAuthorization {
             let configuartion = URLSessionConfiguration.default
@@ -61,7 +61,7 @@ public final class DefaultAPIClient: APIClient {
                 print("-----------------------END-----------------------")
                 #endif
             })
-            .decode(type: T.self, decoder: decoder)
+            .decode(type: T.ReturnType.self, decoder: decoder)
             .mapError { error in
                 print(error)
                 return APIError.noResponse
