@@ -87,6 +87,36 @@
                ReferencedContainer = "container:LetSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "737A20312911AC2E00C0742D"
+               BuildableName = "LetSwiftSnapshotTests.xctest"
+               BlueprintName = "LetSwiftSnapshotTests"
+               ReferencedContainer = "container:LetSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "737A204C2911AE0600C0742D"
+               BuildableName = "NetworkingTests.xctest"
+               BlueprintName = "NetworkingTests"
+               ReferencedContainer = "container:Networking/Networking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "73E6DABC291158730074C878"
+               BuildableName = "LetSwiftUITests.xctest"
+               BlueprintName = "LetSwiftUITests"
+               ReferencedContainer = "container:LetSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

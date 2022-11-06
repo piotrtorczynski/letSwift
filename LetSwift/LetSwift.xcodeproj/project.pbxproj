@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		73188E7D291511C100EDCBBC /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73188E7C291511C100EDCBBC /* TabView.swift */; };
 		73188E802915120200EDCBBC /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73188E7F2915120200EDCBBC /* TabViewModel.swift */; };
-		737A20352911AC2F00C0742D /* LetSwiftSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */; };
+		737A20352911AC2F00C0742D /* ScheduleViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20342911AC2F00C0742D /* ScheduleViewSnapshotTests.swift */; };
 		737A207D2911B3AD00C0742D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737A207C2911B3AD00C0742D /* Networking.framework */; };
 		737A207E2911B3AD00C0742D /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 737A207C2911B3AD00C0742D /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		737A20892911BAED00C0742D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 737A20882911BAED00C0742D /* Resolver */; };
@@ -58,6 +58,10 @@
 		73F5ABE32917B2DB008F7BC0 /* ScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABE22917B2DB008F7BC0 /* ScheduleViewModelTests.swift */; };
 		73F5ABE92917EA96008F7BC0 /* PreviewStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABE82917EA96008F7BC0 /* PreviewStubs.swift */; };
 		73F5ABEA2917EBBD008F7BC0 /* races.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F5ABE52917E9F5008F7BC0 /* races.json */; };
+		73F5ABF12917EF81008F7BC0 /* CuckooMocks.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 73F5ABED2917EF81008F7BC0 /* CuckooMocks.xcfilelist */; };
+		73F5ABF22917EF81008F7BC0 /* cuckoo-generate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 73F5ABEE2917EF81008F7BC0 /* cuckoo-generate.rb */; };
+		73F5ABF62917F034008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */; };
+		73F5ABF82917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABF72917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +107,7 @@
 		73188E7C291511C100EDCBBC /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		73188E7F2915120200EDCBBC /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		737A20322911AC2E00C0742D /* LetSwiftSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftSnapshotTests.swift; sourceTree = "<group>"; };
+		737A20342911AC2F00C0742D /* ScheduleViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewSnapshotTests.swift; sourceTree = "<group>"; };
 		737A207C2911B3AD00C0742D /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737A20942911C1D600C0742D /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737A209A2911C20200C0742D /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +158,10 @@
 		73F5ABE22917B2DB008F7BC0 /* ScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModelTests.swift; sourceTree = "<group>"; };
 		73F5ABE52917E9F5008F7BC0 /* races.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = races.json; sourceTree = "<group>"; };
 		73F5ABE82917EA96008F7BC0 /* PreviewStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStubs.swift; sourceTree = "<group>"; };
+		73F5ABED2917EF81008F7BC0 /* CuckooMocks.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CuckooMocks.xcfilelist; sourceTree = "<group>"; };
+		73F5ABEE2917EF81008F7BC0 /* cuckoo-generate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = "cuckoo-generate.rb"; sourceTree = "<group>"; };
+		73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		73F5ABF72917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftSnapshotTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +214,8 @@
 		737A20332911AC2F00C0742D /* LetSwiftSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				737A20342911AC2F00C0742D /* LetSwiftSnapshotTests.swift */,
+				73F5ABEB2917EF81008F7BC0 /* Cuckoo */,
+				737A20342911AC2F00C0742D /* ScheduleViewSnapshotTests.swift */,
 			);
 			path = LetSwiftSnapshotTests;
 			sourceTree = "<group>";
@@ -424,8 +433,8 @@
 			children = (
 				73E6DAA4291158720074C878 /* LetSwift */,
 				73E6DAB6291158730074C878 /* LetSwiftTests */,
-				73E6DAC0291158730074C878 /* LetSwiftUITests */,
 				737A20332911AC2F00C0742D /* LetSwiftSnapshotTests */,
+				73E6DAC0291158730074C878 /* LetSwiftUITests */,
 				73E6DAA3291158720074C878 /* Products */,
 				73E6DB0029115ABA0074C878 /* Frameworks */,
 			);
@@ -526,6 +535,33 @@
 			path = Previewing;
 			sourceTree = "<group>";
 		};
+		73F5ABEB2917EF81008F7BC0 /* Cuckoo */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABEC2917EF81008F7BC0 /* Build */,
+				73F5ABEF2917EF81008F7BC0 /* Mocks */,
+				73F5ABF72917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift */,
+			);
+			path = Cuckoo;
+			sourceTree = "<group>";
+		};
+		73F5ABEC2917EF81008F7BC0 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABEE2917EF81008F7BC0 /* cuckoo-generate.rb */,
+				73F5ABED2917EF81008F7BC0 /* CuckooMocks.xcfilelist */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		73F5ABEF2917EF81008F7BC0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -533,6 +569,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 737A20382911AC2F00C0742D /* Build configuration list for PBXNativeTarget "LetSwiftSnapshotTests" */;
 			buildPhases = (
+				73F5ABF42917EFB1008F7BC0 /* Cuckoo */,
 				737A202E2911AC2E00C0742D /* Sources */,
 				737A202F2911AC2E00C0742D /* Frameworks */,
 				737A20302911AC2E00C0742D /* Resources */,
@@ -665,6 +702,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F5ABF22917EF81008F7BC0 /* cuckoo-generate.rb in Resources */,
+				73F5ABF12917EF81008F7BC0 /* CuckooMocks.xcfilelist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,11 +749,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${PROJECT_DIR}/LetSwiftTests/Cuckoo/Mocks/GeneratedMocks.swift'",
+				"${PROJECT_DIR}/LetSwiftTests/Cuckoo/Mocks/GeneratedMocks.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ $ACTION != \"indexbuild\" ]; then\n    $PROJECT_DIR/LetSwiftTests/Cuckoo/Build/cuckoo-generate.rb\nfi\n";
+		};
+		73F5ABF42917EFB1008F7BC0 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PROJECT_DIR}/LetSwiftSnapshotTests/Cuckoo/Build/CuckooMocks.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${PROJECT_DIR}/LetSwiftSnapshotTests/Cuckoo/Mocks/GeneratedMocks.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $ACTION != \"indexbuild\" ]; then\n    $PROJECT_DIR/LetSwiftSnapshotTests/Cuckoo/Build/cuckoo-generate.rb\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -723,7 +782,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737A20352911AC2F00C0742D /* LetSwiftSnapshotTests.swift in Sources */,
+				737A20352911AC2F00C0742D /* ScheduleViewSnapshotTests.swift in Sources */,
+				73F5ABF62917F034008F7BC0 /* GeneratedMocks.swift in Sources */,
+				73F5ABF82917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
