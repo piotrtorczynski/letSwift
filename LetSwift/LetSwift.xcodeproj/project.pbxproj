@@ -55,6 +55,9 @@
 		73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */; };
 		73F5ABDE29171331008F7BC0 /* ScheduleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */; };
 		73F5ABE02917164A008F7BC0 /* InspectableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */; };
+		73F5ABE32917B2DB008F7BC0 /* ScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABE22917B2DB008F7BC0 /* ScheduleViewModelTests.swift */; };
+		73F5ABE92917EA96008F7BC0 /* PreviewStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABE82917EA96008F7BC0 /* PreviewStubs.swift */; };
+		73F5ABEA2917EBBD008F7BC0 /* races.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F5ABE52917E9F5008F7BC0 /* races.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,9 @@
 		73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewTests.swift; sourceTree = "<group>"; };
 		73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectableExtension.swift; sourceTree = "<group>"; };
+		73F5ABE22917B2DB008F7BC0 /* ScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModelTests.swift; sourceTree = "<group>"; };
+		73F5ABE52917E9F5008F7BC0 /* races.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = races.json; sourceTree = "<group>"; };
+		73F5ABE82917EA96008F7BC0 /* PreviewStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStubs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +401,7 @@
 		73BB73912916D37E0030CBA7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				73F5ABE42917E9C8008F7BC0 /* Resorces */,
 				73F5ABDB29171304008F7BC0 /* Unit */,
 				73F5ABDC2917130C008F7BC0 /* ViewTests */,
 			);
@@ -441,6 +448,7 @@
 				737A208B2911BC6900C0742D /* Resources */,
 				737A208A2911BC5300C0742D /* Sources */,
 				737A20772911B33800C0742D /* Networking */,
+				73F5ABE72917EA62008F7BC0 /* Previewing */,
 			);
 			path = LetSwift;
 			sourceTree = "<group>";
@@ -479,6 +487,7 @@
 		73F5ABDB29171304008F7BC0 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				73F5ABE12917B2CA008F7BC0 /* ViewModels */,
 				73BB73922916D3EB0030CBA7 /* Networking */,
 			);
 			path = Unit;
@@ -491,6 +500,30 @@
 				73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */,
 			);
 			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		73F5ABE12917B2CA008F7BC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABE22917B2DB008F7BC0 /* ScheduleViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		73F5ABE42917E9C8008F7BC0 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABE52917E9F5008F7BC0 /* races.json */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		73F5ABE72917EA62008F7BC0 /* Previewing */ = {
+			isa = PBXGroup;
+			children = (
+				73F5ABE82917EA96008F7BC0 /* PreviewStubs.swift */,
+			);
+			path = Previewing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -639,6 +672,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F5ABEA2917EBBD008F7BC0 /* races.json in Resources */,
 				73E6DAAA291158730074C878 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +735,7 @@
 				73BB7374291599890030CBA7 /* Race.swift in Sources */,
 				73BB73792915A74E0030CBA7 /* DriverStatusView.swift in Sources */,
 				73BB736B291565760030CBA7 /* DriverStandings.swift in Sources */,
+				73F5ABE92917EA96008F7BC0 /* PreviewStubs.swift in Sources */,
 				73188E7D291511C100EDCBBC /* TabView.swift in Sources */,
 				73BB737D2915A7610030CBA7 /* DriveerStatusRequest.swift in Sources */,
 				737A20A42911C5E500C0742D /* DriverStandingsViewModel.swift in Sources */,
@@ -734,6 +769,7 @@
 				73BB7396291703E00030CBA7 /* DriverStatusRequestTests.swift in Sources */,
 				73F5ABE02917164A008F7BC0 /* InspectableExtension.swift in Sources */,
 				73BB7398291705C00030CBA7 /* EargastBuilderTests.swift in Sources */,
+				73F5ABE32917B2DB008F7BC0 /* ScheduleViewModelTests.swift in Sources */,
 				73BB73942916D3F90030CBA7 /* EargastAPIServiceTests.swift in Sources */,
 				73BB739F29170CC20030CBA7 /* APIClientTests.swift in Sources */,
 				73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */,

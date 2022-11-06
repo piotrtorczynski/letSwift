@@ -43,4 +43,15 @@ final class ScheduleViewTests: TestCase {
         XCTAssertNotNil(try view.inspect().find(viewWithId: "circlural_view"))
     }
 
+    func testErrorState() throws {
+        let viewModel = ScheduleViewModel()
+
+        let view = ScheduleView(viewModel: viewModel)
+
+        ViewHosting.host(view: view)
+
+        viewModel.state = .error(TestError.none)
+
+        XCTAssertNotNil(try view.inspect().find(viewWithId: "try_again_view"))
+    }
 }
