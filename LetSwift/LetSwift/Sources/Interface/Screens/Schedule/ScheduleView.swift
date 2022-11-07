@@ -25,6 +25,7 @@ struct ScheduleView: View {
                     }
                 case .loaded:
                     makeLoadedView()
+                        .id("races_view")
                 }
             }
             .onAppear {
@@ -62,6 +63,7 @@ struct ScheduleView: View {
             RaceRow(model: race)
             TableSeparatorView(separatorType: .fullWidth)
         }
+        .id("upcoming_races_view")
     }
 
     @ViewBuilder private func makeFinishedRacesView() -> some View {
@@ -69,5 +71,6 @@ struct ScheduleView: View {
             RaceRow(model: race)
             TableSeparatorView(separatorType: .fullWidth)
         }
+        .id("finished_races_view")
     }
 }

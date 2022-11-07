@@ -8,6 +8,8 @@
 import Networking
 
 struct CurrentRaceScheduleRequest: APIRequest {
+    typealias ReturnType = CurrentRaceSchedule
+
     var urlBuilder: Networking.APIURLBuilder { EargastBuilder() }
 
     var path: String { "current.json" }

@@ -5,7 +5,7 @@ extension URLComponents {
     /// Convenience initializer for APIRequest
     ///
     /// - Parameter request: Request which needs to be executed
-    init(request: APIRequest) {
+    init(request: any APIRequest) {
         self = {
             var components = URLComponents()
             

@@ -36,3 +36,35 @@ struct Driver: Codable {
         case number = "permanentNumber"
     }
 }
+
+struct CurrentDriverStandings: Codable {
+    let data: MRDAta
+
+    enum CodingKeys: String, CodingKey {
+        case data = "MRData"
+    }
+
+    struct MRDAta: Codable {
+        let standings: StandingsTable
+
+        enum CodingKeys: String, CodingKey {
+            case standings = "StandingsTable"
+        }
+
+        struct StandingsTable: Codable {
+            let standingsLists: [StandingsLists]
+
+            enum CodingKeys: String, CodingKey {
+                case standingsLists = "StandingsLists"
+            }
+
+            struct StandingsLists: Codable {
+                let driverStandings: [DriverStandings]
+
+                enum CodingKeys: String, CodingKey {
+                    case driverStandings = "DriverStandings"
+                }
+            }
+        }
+    }
+}

@@ -6,7 +6,7 @@ extension URLRequest {
     ///
     /// - Parameter request: Request which needs to be executed
     /// - Throws: APIRequestError.incorrectURL when url could not be created
-    init(request: APIRequest) throws {
+    init(request: any APIRequest) throws {
         guard let url = URLComponents(request: request).url else {
             throw APIError.incorrectURL(url: request.path)
         }

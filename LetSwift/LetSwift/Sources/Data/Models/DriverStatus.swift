@@ -21,3 +21,19 @@ struct DriverStatus: Codable {
         let status: String
     }
 }
+
+struct DriverStatusResponse: Codable {
+    let data: MRDAta
+
+    enum CodingKeys: String, CodingKey {
+        case data = "MRData"
+    }
+
+    struct MRDAta: Codable {
+        let statusTable: DriverStatus
+
+        enum CodingKeys: String, CodingKey {
+            case statusTable = "StatusTable"
+        }
+    }
+}

@@ -42,8 +42,8 @@ public protocol SnapshotTestCase {
 
 extension SnapshotTestCase {
     func setUpSnapshotTests() {
-        if UIDevice.current.name != "iPhone 13 Pro" {
-            fatalError("Switch to using iPhone 13 Pro for these tests.")
+        if !UIDevice.current.name.contains("iPhone 14 Pro") {
+            fatalError("Switch to using iPhone 14 Pro for these tests.")
         }
 
         UIView.setAnimationsEnabled(false)

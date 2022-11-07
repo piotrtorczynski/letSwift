@@ -24,10 +24,12 @@ struct RaceRow: View {
                     Text(model.round)
                         .foregroundColor(Color.red)
                         .font(.headline)
+                        .id("race_round")
 
                     Text(model.circuit.circuitName)
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
+                        .id("race_circuit_name")
                 }
 
                 Spacer()
@@ -48,5 +50,6 @@ struct RaceRow: View {
 
     @ViewBuilder func makeCircuitImage(with circuit: Circuit) -> some View {
         Image(circuit.location.country.lowercased())
+            .id("race_circuit_image")
     }
 }

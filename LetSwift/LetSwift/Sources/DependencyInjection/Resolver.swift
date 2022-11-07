@@ -19,7 +19,11 @@ extension Resolver: ResolverRegistering {
     }
 
     private static func registerNetworking() {
-        register { DefaultAPIClient() as APIClient }
+        register { DefaultAPIClient(session: resolve()) }
+            .implements(APIClient.self)
+
+        register { URLSession.shared }
+            .implements(URLRequestSending.self)
     }
 
     private static func registerAPIs() {

@@ -11,8 +11,6 @@ enum TabState: Int, CaseIterable {
     case ebooks, audiobooks
 }
 
-
 final class TabViewModel: ObservableObject {
     @Published var selectedTab: TabState = .audiobooks
-
 }

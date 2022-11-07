@@ -38,3 +38,28 @@ struct Circuit: Codable {
         let country: String
     }
 }
+
+
+struct CurrentRaceSchedule: Codable {
+    let data: MRDAta
+
+    enum CodingKeys: String, CodingKey {
+        case data = "MRData"
+    }
+
+    struct MRDAta: Codable {
+        let raceTable: RaceTable
+
+        enum CodingKeys: String, CodingKey {
+            case raceTable = "RaceTable"
+        }
+
+        struct RaceTable: Codable {
+            let races: [Race]
+
+            enum CodingKeys: String, CodingKey {
+                case races = "Races"
+            }
+        }
+    }
+}
