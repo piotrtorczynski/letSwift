@@ -11,6 +11,7 @@ extension URLComponents {
             
             components.scheme = request.urlBuilder.scheme.rawValue
             components.host = request.urlBuilder.host
+            components.port = request.urlBuilder.port
             
             if let version = request.urlBuilder.version {
                 components.path = "/" + NSString.path(withComponents: [

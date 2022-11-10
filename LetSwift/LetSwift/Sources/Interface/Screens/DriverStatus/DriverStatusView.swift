@@ -26,8 +26,8 @@ struct DriverStatusView: View {
                 makeLoadedView()
             }
         }
+        .accessibilityIdentifier("DriverStatusView")
         .navigationTitle(viewModel.title)
-
     }
 
     @ViewBuilder private func makeLoadedView() -> some View {
@@ -45,6 +45,7 @@ struct DriverStatusView: View {
                 makeAttendanceSummary()
             }
             .padding(.top, 24)
+            .accessibilityIdentifier("driver_status_attendance_view")
             Spacer()
         }
     }

@@ -21,6 +21,8 @@
 		737A20742911AF3C00C0742D /* DefaultAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A206B2911AF3C00C0742D /* DefaultAPIClient.swift */; };
 		737A20762911B30900C0742D /* DefaultDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20752911B30900C0742D /* DefaultDecoder.swift */; };
 		73BB739A291706DE0030CBA7 /* URLRequestSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7399291706DE0030CBA7 /* URLRequestSending.swift */; };
+		73F5AC23291BDED5008F7BC0 /* ServerEnvironmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5AC22291BDED5008F7BC0 /* ServerEnvironmentController.swift */; };
+		73F5AC24291BDF0C008F7BC0 /* ServerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5AC20291BDE5E008F7BC0 /* ServerEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		737A206B2911AF3C00C0742D /* DefaultAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAPIClient.swift; sourceTree = "<group>"; };
 		737A20752911B30900C0742D /* DefaultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDecoder.swift; sourceTree = "<group>"; };
 		73BB7399291706DE0030CBA7 /* URLRequestSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestSending.swift; sourceTree = "<group>"; };
+		73F5AC20291BDE5E008F7BC0 /* ServerEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEnvironment.swift; sourceTree = "<group>"; };
+		73F5AC22291BDED5008F7BC0 /* ServerEnvironmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEnvironmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		737A20632911AF3C00C0742D /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				73F5AC21291BDE5E008F7BC0 /* ServerEnvironment */,
 				737A20642911AF3C00C0742D /* Core */,
 				737A206B2911AF3C00C0742D /* DefaultAPIClient.swift */,
 			);
@@ -161,6 +166,15 @@
 				73BB7399291706DE0030CBA7 /* URLRequestSending.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		73F5AC21291BDE5E008F7BC0 /* ServerEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				73F5AC20291BDE5E008F7BC0 /* ServerEnvironment.swift */,
+				73F5AC22291BDED5008F7BC0 /* ServerEnvironmentController.swift */,
+			);
+			path = ServerEnvironment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F5AC24291BDF0C008F7BC0 /* ServerEnvironment.swift in Sources */,
+				73F5AC23291BDED5008F7BC0 /* ServerEnvironmentController.swift in Sources */,
 				737A20712911AF3C00C0742D /* APIURLBuilder.swift in Sources */,
 				737A206C2911AF3C00C0742D /* Foundation.URLComponents.swift in Sources */,
 				73BB739A291706DE0030CBA7 /* URLRequestSending.swift in Sources */,

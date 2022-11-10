@@ -14,7 +14,7 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>UITests.xcscheme_^#shared#^_</key>
+		<key>LetSwiftUITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>

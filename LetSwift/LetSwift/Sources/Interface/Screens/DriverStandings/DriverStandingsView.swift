@@ -28,6 +28,7 @@ struct DriverStandingsView: View {
                 }
             }
             .navigationTitle(viewModel.title)
+            .accessibilityIdentifier("DriverStandingsView")
         }
         .navigationViewStyle(.stack)
     }

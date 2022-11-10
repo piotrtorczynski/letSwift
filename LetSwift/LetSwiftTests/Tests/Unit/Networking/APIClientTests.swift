@@ -8,6 +8,7 @@
 import Combine
 import Cuckoo
 import Foundation
+import Resolver
 import XCTest
 
 @testable import Networking
@@ -18,26 +19,33 @@ final class APIClientTests: XCTestCase {
     private var cancellable: AnyCancellable?
     private var request = URLRequest(url: URL(string: "http://aaaa.test")!)
     private var mockUrlSession = MockURLRequestSending()
+    private var mockServerEnvironmentController = MockServerEnvironmentControllerProtocol()
 
-    // MARK: - Tests
-
-    func testdataTaskPublisher() {
-        configureDownloadMocks()
-
-        let apiClient = DefaultAPIClient(session: mockUrlSession)
-
-        _ = apiClient.perform(request: TestRequest())
-        verify(mockUrlSession, times(1)).dataTaskPublisher(for: any())
-    }
-
-    // MARK: - Helpers
-
-    private func configureDownloadMocks() {
+    override func setUp() {
+        super.setUp()
 
         let publisher = URLSession.DataTaskPublisher(request: request, session: URLSession.shared)
         stub(mockUrlSession) { mock in
             when(mock.dataTaskPublisher(for: any())).thenReturn(publisher)
         }
+
+        stub(mockServerEnvironmentController) { mock in
+            when(mock.initialServerEnvironment.get).thenReturn(.production)
+            when(mock.environment.get).thenReturn(.production)
+            when(mock.environment.set(any())).thenDoNothing()
+        }
+
+        Resolver.register { self.mockServerEnvironmentController }
+            .implements(ServerEnvironmentControllerProtocol.self)
+    }
+
+    // MARK: - Tests
+
+    func testdataTaskPublisher() {
+        let apiClient = DefaultAPIClient(session: mockUrlSession)
+
+        _ = apiClient.perform(request: TestRequest())
+        verify(mockUrlSession, times(1)).dataTaskPublisher(for: any())
     }
 }
 
