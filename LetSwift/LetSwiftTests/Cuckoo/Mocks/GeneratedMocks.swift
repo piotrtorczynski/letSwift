@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: LetSwift/Networking/F1/Services/EargastAPIService.swift at 2022-11-06 13:48:34 +0000
+// MARK: - Mocks generated from file: LetSwift/Networking/F1/Services/EargastAPIService.swift at 2022-11-10 11:25:32 +0000
 
 //
 //  EargastAPIService.swift
@@ -171,7 +171,7 @@ import Resolver
 }
 
 
-// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/APIClient.swift at 2022-11-06 13:48:34 +0000
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/APIClient.swift at 2022-11-10 11:25:32 +0000
 
 
 import Cuckoo
@@ -273,7 +273,7 @@ public class APIClientStub: APIClient {
 }
 
 
-// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/URLRequestSending.swift at 2022-11-06 13:48:34 +0000
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/URLRequestSending.swift at 2022-11-10 11:25:32 +0000
 
 //
 //  URLRequestSending.swift
@@ -409,6 +409,169 @@ public class URLRequestSendingStub: URLRequestSending {
     public func dataTaskPublisher(for request: URLRequest) -> URLSession.DataTaskPublisher  {
         return DefaultValueRegistry.defaultValue(for: (URLSession.DataTaskPublisher).self)
     }
+    
+}
+
+
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/ServerEnvironment/ServerEnvironmentController.swift at 2022-11-10 11:25:32 +0000
+
+//
+//  ServerEnvironmentController.swift
+//  Networking
+//
+//  Created by Piotr Torczynski on 09/11/2022.
+//
+
+import Cuckoo
+@testable import LetSwift
+
+
+public class MockServerEnvironmentControllerProtocol: ServerEnvironmentControllerProtocol, Cuckoo.ProtocolMock {
+    
+    public typealias MocksType = ServerEnvironmentControllerProtocol
+    
+    public typealias Stubbing = __StubbingProxy_ServerEnvironmentControllerProtocol
+    public typealias Verification = __VerificationProxy_ServerEnvironmentControllerProtocol
+
+    public let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: ServerEnvironmentControllerProtocol?
+
+    public func enableDefaultImplementation(_ stub: ServerEnvironmentControllerProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+    
+    
+    public var environment: ServerEnvironment {
+        get {
+            return cuckoo_manager.getter("environment",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.environment)
+        }
+        
+        set {
+            cuckoo_manager.setter("environment",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.environment = newValue)
+        }
+        
+    }
+    
+    
+    
+    public var initialServerEnvironment: ServerEnvironment {
+        get {
+            return cuckoo_manager.getter("initialServerEnvironment",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.initialServerEnvironment)
+        }
+        
+        set {
+            cuckoo_manager.setter("initialServerEnvironment",
+                value: newValue,
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.initialServerEnvironment = newValue)
+        }
+        
+    }
+    
+
+    
+
+    
+
+	public struct __StubbingProxy_ServerEnvironmentControllerProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	    public init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    var environment: Cuckoo.ProtocolToBeStubbedProperty<MockServerEnvironmentControllerProtocol, ServerEnvironment> {
+	        return .init(manager: cuckoo_manager, name: "environment")
+	    }
+	    
+	    
+	    var initialServerEnvironment: Cuckoo.ProtocolToBeStubbedProperty<MockServerEnvironmentControllerProtocol, ServerEnvironment> {
+	        return .init(manager: cuckoo_manager, name: "initialServerEnvironment")
+	    }
+	    
+	    
+	}
+
+	public struct __VerificationProxy_ServerEnvironmentControllerProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	    public init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	    
+	    var environment: Cuckoo.VerifyProperty<ServerEnvironment> {
+	        return .init(manager: cuckoo_manager, name: "environment", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	    
+	    var initialServerEnvironment: Cuckoo.VerifyProperty<ServerEnvironment> {
+	        return .init(manager: cuckoo_manager, name: "initialServerEnvironment", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
+	
+	    
+	}
+}
+
+public class ServerEnvironmentControllerProtocolStub: ServerEnvironmentControllerProtocol {
+        
+    
+    
+    public var environment: ServerEnvironment {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (ServerEnvironment).self)
+        }
+        
+        set { }
+        
+    }
+        
+    
+    
+    public var initialServerEnvironment: ServerEnvironment {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (ServerEnvironment).self)
+        }
+        
+        set { }
+        
+    }
+    
+
+    
+
     
 }
 

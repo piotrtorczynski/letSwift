@@ -18,6 +18,8 @@ public protocol APIURLBuilder {
 
     /// Api version
     var version: String? { get }
+
+    var port: Int? { get }
 }
 
 public extension APIURLBuilder {
@@ -26,4 +28,6 @@ public extension APIURLBuilder {
     var scheme: Scheme { return .https }
 
     var version: String? { return nil }
+
+    var port: Int? { return nil }
 }

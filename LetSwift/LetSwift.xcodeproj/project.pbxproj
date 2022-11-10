@@ -48,8 +48,6 @@
 		73BB739F29170CC20030CBA7 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB739E29170CC20030CBA7 /* APIClientTests.swift */; };
 		73E6DAA6291158720074C878 /* LetSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAA5291158720074C878 /* LetSwiftApp.swift */; };
 		73E6DAAA291158730074C878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6DAA9291158730074C878 /* Assets.xcassets */; };
-		73E6DAC2291158730074C878 /* LetSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAC1291158730074C878 /* LetSwiftUITests.swift */; };
-		73E6DAC4291158730074C878 /* LetSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E6DAC3291158730074C878 /* LetSwiftUITestsLaunchTests.swift */; };
 		73E6DB0229115ABA0074C878 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; };
 		73E6DB0329115ABA0074C878 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73E6DB0129115ABA0074C878 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73F5ABDA29171033008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */; };
@@ -62,6 +60,9 @@
 		73F5ABF22917EF81008F7BC0 /* cuckoo-generate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 73F5ABEE2917EF81008F7BC0 /* cuckoo-generate.rb */; };
 		73F5ABF62917F034008F7BC0 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */; };
 		73F5ABF82917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5ABF72917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift */; };
+		73F5AC18291BC4A4008F7BC0 /* DriverStandingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5AC17291BC4A4008F7BC0 /* DriverStandingsUITests.swift */; };
+		73F5AC1A291BC52C008F7BC0 /* CurrentDriverStandings.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F5AC19291BC52C008F7BC0 /* CurrentDriverStandings.json */; };
+		73F5AC1C291BDCA1008F7BC0 /* DriverStandings.json in Resources */ = {isa = PBXBuildFile; fileRef = 73F5AC1B291BDCA1008F7BC0 /* DriverStandings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,8 +149,6 @@
 		73E6DAAB291158730074C878 /* LetSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetSwift.entitlements; sourceTree = "<group>"; };
 		73E6DAB3291158730074C878 /* LetSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DABD291158730074C878 /* LetSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73E6DAC1291158730074C878 /* LetSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftUITests.swift; sourceTree = "<group>"; };
-		73E6DAC3291158730074C878 /* LetSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73E6DB0129115ABA0074C878 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6DBA9291167C60074C878 /* Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F5ABD929171033008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
@@ -162,6 +161,9 @@
 		73F5ABEE2917EF81008F7BC0 /* cuckoo-generate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = "cuckoo-generate.rb"; sourceTree = "<group>"; };
 		73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		73F5ABF72917F0E2008F7BC0 /* LetSwiftSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwiftSnapshotTestCase.swift; sourceTree = "<group>"; };
+		73F5AC17291BC4A4008F7BC0 /* DriverStandingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandingsUITests.swift; sourceTree = "<group>"; };
+		73F5AC19291BC52C008F7BC0 /* CurrentDriverStandings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentDriverStandings.json; sourceTree = "<group>"; };
+		73F5AC1B291BDCA1008F7BC0 /* DriverStandings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverStandings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,8 +467,8 @@
 		73E6DAB6291158730074C878 /* LetSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				73BB73912916D37E0030CBA7 /* Tests */,
 				73BB73872916CE940030CBA7 /* Cuckoo */,
+				73BB73912916D37E0030CBA7 /* Tests */,
 			);
 			path = LetSwiftTests;
 			sourceTree = "<group>";
@@ -474,8 +476,8 @@
 		73E6DAC0291158730074C878 /* LetSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				73E6DAC1291158730074C878 /* LetSwiftUITests.swift */,
-				73E6DAC3291158730074C878 /* LetSwiftUITestsLaunchTests.swift */,
+				73F5AC15291BC2CC008F7BC0 /* MockJSONResponses */,
+				73F5AC16291BC2DF008F7BC0 /* AutomationTests */,
 			);
 			path = LetSwiftUITests;
 			sourceTree = "<group>";
@@ -560,6 +562,23 @@
 				73F5ABF52917F034008F7BC0 /* GeneratedMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		73F5AC15291BC2CC008F7BC0 /* MockJSONResponses */ = {
+			isa = PBXGroup;
+			children = (
+				73F5AC19291BC52C008F7BC0 /* CurrentDriverStandings.json */,
+				73F5AC1B291BDCA1008F7BC0 /* DriverStandings.json */,
+			);
+			path = MockJSONResponses;
+			sourceTree = "<group>";
+		};
+		73F5AC16291BC2DF008F7BC0 /* AutomationTests */ = {
+			isa = PBXGroup;
+			children = (
+				73F5AC17291BC4A4008F7BC0 /* DriverStandingsUITests.swift */,
+			);
+			path = AutomationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -669,6 +688,7 @@
 					};
 					73E6DABC291158730074C878 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 						TestTargetID = 73E6DAA1291158720074C878;
 					};
 				};
@@ -729,6 +749,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F5AC1A291BC52C008F7BC0 /* CurrentDriverStandings.json in Resources */,
+				73F5AC1C291BDCA1008F7BC0 /* DriverStandings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,8 +864,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E6DAC4291158730074C878 /* LetSwiftUITestsLaunchTests.swift in Sources */,
-				73E6DAC2291158730074C878 /* LetSwiftUITests.swift in Sources */,
+				73F5AC18291BC4A4008F7BC0 /* DriverStandingsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,7 +1106,7 @@
 				DEVELOPMENT_TEAM = YG9DMDHAC7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_ONLY_ACTIVE_RESOURCES = YES;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1174,11 +1195,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YG9DMDHAC7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.LetSwiftUITests;
@@ -1186,6 +1213,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LetSwift;
@@ -1196,11 +1224,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YG9DMDHAC7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.LetSwiftUITests;

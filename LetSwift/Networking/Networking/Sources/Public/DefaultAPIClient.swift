@@ -20,14 +20,13 @@ public final class DefaultAPIClient: APIClient {
     
     // MARK: Private
 
-    private func send<T: APIRequest>(request: T, _ decoder: JSONDecoder = DefaultDecoder()) -> AnyPublisher<T.ReturnType, Error> {
+    private func send<T: APIRequest>(request: T, _ decoder: JSONDecoder) -> AnyPublisher<T.ReturnType, Error> {
         var urlRequest: URLRequest
         if request.requiresAuthorization {
             let configuartion = URLSessionConfiguration.default
             configuartion.httpAdditionalHeaders = request.headers
             session = URLSession(configuration: configuartion)
         }
-        
         do {
             urlRequest = try URLRequest(request: request)
             urlRequest.cachePolicy = .reloadRevalidatingCacheData
@@ -63,7 +62,6 @@ public final class DefaultAPIClient: APIClient {
             })
             .decode(type: T.ReturnType.self, decoder: decoder)
             .mapError { error in
-                print(error)
                 return APIError.noResponse
             }
             .eraseToAnyPublisher()

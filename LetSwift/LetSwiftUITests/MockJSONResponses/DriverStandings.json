@@ -1,0 +1,31 @@
+{
+  "MRData": {
+    "xmlns": "http://ergast.com/mrd/1.5",
+    "series": "f1",
+    "url": "http://ergast.com/api/f1/2022/drivers/max_verstappen/status.json",
+    "limit": "30",
+    "offset": "0",
+    "total": "3",
+    "StatusTable": {
+      "season": "2022",
+      "driverId": "max_verstappen",
+      "Status": [
+        {
+          "statusId": "1",
+          "count": "19",
+          "status": "Finished"
+        },
+        {
+          "statusId": "32",
+          "count": "1",
+          "status": "Fuel pressure"
+        },
+        {
+          "statusId": "95",
+          "count": "1",
+          "status": "Fuel leak"
+        }
+      ]
+    }
+  }
+}

@@ -56,7 +56,7 @@ struct DriverRow: View {
             .padding(.vertical, 16)
 
         }
-        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("driver_row")
     }
 
     @ViewBuilder func makeAvatar(with driver: Driver) -> some View {

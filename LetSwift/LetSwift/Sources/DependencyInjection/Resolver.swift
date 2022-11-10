@@ -14,8 +14,21 @@ extension Resolver: ResolverRegistering {
         // don't register real dependencies while unit testing
         guard !CommandLine.isUnitTesting else { return }
         registerNetworking()
+        registerCache()
         registerAPIs()
         registerNaviation()
+    }
+
+    private static func registerCache() {
+
+        register(UserDefaults.self) {
+            return UserDefaults.standard
+        }
+        .scope(.application)
+
+        register { ServerEnvironmentController(store: resolve()) }
+            .implements(ServerEnvironmentControllerProtocol.self)
+            .scope(.application)
     }
 
     private static func registerNetworking() {
