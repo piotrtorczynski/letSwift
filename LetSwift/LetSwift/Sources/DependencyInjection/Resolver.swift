@@ -11,8 +11,9 @@ import Resolver
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
-        // don't register real dependencies while unit testing
+        // Don't register real dependencies while unit testing
         guard !CommandLine.isUnitTesting else { return }
+
         registerNetworking()
         registerCache()
         registerAPIs()
@@ -46,5 +47,6 @@ extension Resolver: ResolverRegistering {
 
     private static func registerNaviation() {
         register { ViewFactory() }
+            .implements(ViewVending.self)
     }
 }

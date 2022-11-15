@@ -14,3 +14,4 @@ extension ProgressView: Inspectable { }
 extension ScheduleView: Inspectable { }
 extension TryAgainErrorView: Inspectable { }
 extension BackgroundView: Inspectable { }
+extension DriverStandingsView: Inspectable { }

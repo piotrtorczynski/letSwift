@@ -34,7 +34,8 @@ final class DriverStandingsUITests: UITestCase {
         // Assert drivers displayed
         // Tap row 1
         app.staticTexts["driver_row"]
-            .firstMatch.wait(until: \.exists)
+            .firstMatch
+            .wait(until: \.exists)
             .wait(until: \.isHittable)
             .tap()
 

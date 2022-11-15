@@ -7,8 +7,6 @@
 
 public protocol ServerEnvironmentControllerProtocol {
     var environment: ServerEnvironment { get set }
-
-    /// This is used for when no ServerEnvironment has been selected for the user in DevToolsView.
     var initialServerEnvironment: ServerEnvironment { get set }
 }
 

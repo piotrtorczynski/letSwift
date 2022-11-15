@@ -50,5 +50,6 @@ struct DriverStandingsView: View {
                     label: { EmptyView() })
             }
         }
+        .id("driver_standings_list")
     }
 }

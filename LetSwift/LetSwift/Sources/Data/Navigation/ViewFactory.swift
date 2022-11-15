@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-final class ViewFactory {
+protocol ViewVending {
+
+}
+
+final class ViewFactory: ViewVending {
     @ViewBuilder func view(for destination: NavigationDestination) -> some View {
         switch destination {
         case .driverStatus(let driver):

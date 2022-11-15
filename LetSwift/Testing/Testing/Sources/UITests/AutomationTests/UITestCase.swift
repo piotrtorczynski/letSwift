@@ -14,11 +14,6 @@ import XCTest
 /// Sets up our mock server, environment variables, and launch arguments necessary for UI tests to run successfully. Launches the app before each test run.
 open class UITestCase: XCTestCase {
 
-    struct Paths {
-        static let token = "/oauth/token"
-        static let account = "/api/v2/account"
-    }
-
     // MARK: - Properties
 
     /// Swifter HTTP server for mocking network traffic during UI test runs.

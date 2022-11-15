@@ -25,26 +25,18 @@ final class DriverStatusViewModel: ObservableObject {
     @Published var state: State = .loading
     @Published var driverStatus: DriverStatus?
 
-    var attendance: CGFloat {
-        guard let driverStatus = driverStatus, let finished = driverStatus.statuses.first(where: { $0.status.lowercased() == "finished" }), let count = Int(finished.count) else { return 0 }
-        return CGFloat(count) / CGFloat(allRacesCount) * 100
-    }
-
-    private var allRacesCount: Int {
-        guard let driverStatus = driverStatus else { return 0 }
-        let count = driverStatus.statuses
-            .compactMap({ Int($0.count) })
-            .reduce(0, +)
-        return count
-    }
-
     init(driver: Driver) {
         self.driver = driver
         getSchedule()
     }
 
     var title: String {
-        driver.name + "" + driver.familyName
+        driver.name + " " + driver.familyName
+    }
+
+    var attendance: CGFloat {
+        guard let driverStatus = driverStatus, let finished = driverStatus.statuses.first(where: { $0.status.lowercased() == "finished" }), let count = Int(finished.count) else { return 0 }
+        return CGFloat(count) / CGFloat(allRacesCount) * 100
     }
 
     func getSchedule() {
@@ -63,5 +55,13 @@ final class DriverStatusViewModel: ObservableObject {
                 self?.driverStatus = status
             }
             .store(in: &cancellables)
+    }
+
+    private var allRacesCount: Int {
+        guard let driverStatus = driverStatus else { return 0 }
+        let count = driverStatus.statuses
+            .compactMap({ Int($0.count) })
+            .reduce(0, +)
+        return count
     }
 }

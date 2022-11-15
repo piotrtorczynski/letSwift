@@ -9,15 +9,20 @@ import Combine
 import Cuckoo
 import Foundation
 import Resolver
+import Testing
 import XCTest
 
 @testable import Networking
 @testable import LetSwift
 
-final class APIClientTests: XCTestCase {
 
-    private var cancellable: AnyCancellable?
-    private var request = URLRequest(url: URL(string: "http://aaaa.test")!)
+/// A class to test API Client
+final class APIClientTests: TestCase {
+
+    // MARK: - Properties
+    private let request = URLRequest(url: URL(string: "http://aaaa.test")!)
+
+    // MARK: - Mocks
     private var mockUrlSession = MockURLRequestSending()
     private var mockServerEnvironmentController = MockServerEnvironmentControllerProtocol()
 
@@ -25,6 +30,7 @@ final class APIClientTests: XCTestCase {
         super.setUp()
 
         let publisher = URLSession.DataTaskPublisher(request: request, session: URLSession.shared)
+
         stub(mockUrlSession) { mock in
             when(mock.dataTaskPublisher(for: any())).thenReturn(publisher)
         }
@@ -47,6 +53,7 @@ final class APIClientTests: XCTestCase {
         _ = apiClient.perform(request: TestRequest())
         verify(mockUrlSession, times(1)).dataTaskPublisher(for: any())
     }
+
 }
 
 private struct TestRequest: APIRequest {

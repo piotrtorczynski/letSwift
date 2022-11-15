@@ -19,6 +19,8 @@
 		737A20A22911C5D100C0742D /* DriverStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20A12911C5D100C0742D /* DriverStandingsView.swift */; };
 		737A20A42911C5E500C0742D /* DriverStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20A32911C5E400C0742D /* DriverStandingsViewModel.swift */; };
 		737A20A72911C6BE00C0742D /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A20A62911C6BE00C0742D /* Resolver.swift */; };
+		73AFC185291D41E000AEC3F7 /* DriverStandingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFC184291D41E000AEC3F7 /* DriverStandingsViewTests.swift */; };
+		73AFC187291D42F500AEC3F7 /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 73AFC186291D42F500AEC3F7 /* standings.json */; };
 		73BB7353291524A00030CBA7 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7352291524A00030CBA7 /* PrimaryButton.swift */; };
 		73BB7355291525990030CBA7 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7354291525990030CBA7 /* TryAgainView.swift */; };
 		73BB7359291526A10030CBA7 /* TableSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB7358291526A10030CBA7 /* TableSeparatorView.swift */; };
@@ -116,6 +118,8 @@
 		737A20A12911C5D100C0742D /* DriverStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandingsView.swift; sourceTree = "<group>"; };
 		737A20A32911C5E400C0742D /* DriverStandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandingsViewModel.swift; sourceTree = "<group>"; };
 		737A20A62911C6BE00C0742D /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		73AFC184291D41E000AEC3F7 /* DriverStandingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandingsViewTests.swift; sourceTree = "<group>"; };
+		73AFC186291D42F500AEC3F7 /* standings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
 		73BB7352291524A00030CBA7 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		73BB7354291525990030CBA7 /* TryAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
 		73BB7358291526A10030CBA7 /* TableSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSeparatorView.swift; sourceTree = "<group>"; };
@@ -422,10 +426,10 @@
 		73BB73922916D3EB0030CBA7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				73BB73932916D3F90030CBA7 /* EargastAPIServiceTests.swift */,
-				73BB7395291703E00030CBA7 /* DriverStatusRequestTests.swift */,
-				73BB7397291705C00030CBA7 /* EargastBuilderTests.swift */,
 				73BB739E29170CC20030CBA7 /* APIClientTests.swift */,
+				73BB7395291703E00030CBA7 /* DriverStatusRequestTests.swift */,
+				73BB73932916D3F90030CBA7 /* EargastAPIServiceTests.swift */,
+				73BB7397291705C00030CBA7 /* EargastBuilderTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -456,10 +460,10 @@
 		73E6DAA4291158720074C878 /* LetSwift */ = {
 			isa = PBXGroup;
 			children = (
-				737A208B2911BC6900C0742D /* Resources */,
-				737A208A2911BC5300C0742D /* Sources */,
 				737A20772911B33800C0742D /* Networking */,
 				73F5ABE72917EA62008F7BC0 /* Previewing */,
+				737A208B2911BC6900C0742D /* Resources */,
+				737A208A2911BC5300C0742D /* Sources */,
 			);
 			path = LetSwift;
 			sourceTree = "<group>";
@@ -498,8 +502,8 @@
 		73F5ABDB29171304008F7BC0 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				73F5ABE12917B2CA008F7BC0 /* ViewModels */,
 				73BB73922916D3EB0030CBA7 /* Networking */,
+				73F5ABE12917B2CA008F7BC0 /* ViewModels */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -509,6 +513,7 @@
 			children = (
 				73F5ABDF2917164A008F7BC0 /* InspectableExtension.swift */,
 				73F5ABDD29171331008F7BC0 /* ScheduleViewTests.swift */,
+				73AFC184291D41E000AEC3F7 /* DriverStandingsViewTests.swift */,
 			);
 			path = ViewTests;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				73F5ABE52917E9F5008F7BC0 /* races.json */,
+				73AFC186291D42F500AEC3F7 /* standings.json */,
 			);
 			path = Resorces;
 			sourceTree = "<group>";
@@ -731,6 +737,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AFC187291D42F500AEC3F7 /* standings.json in Resources */,
 				73F5ABEA2917EBBD008F7BC0 /* races.json in Resources */,
 				73E6DAAA291158730074C878 /* Assets.xcassets in Resources */,
 			);
@@ -851,6 +858,7 @@
 			files = (
 				73BB7396291703E00030CBA7 /* DriverStatusRequestTests.swift in Sources */,
 				73F5ABE02917164A008F7BC0 /* InspectableExtension.swift in Sources */,
+				73AFC185291D41E000AEC3F7 /* DriverStandingsViewTests.swift in Sources */,
 				73BB7398291705C00030CBA7 /* EargastBuilderTests.swift in Sources */,
 				73F5ABE32917B2DB008F7BC0 /* ScheduleViewModelTests.swift in Sources */,
 				73BB73942916D3F90030CBA7 /* EargastAPIServiceTests.swift in Sources */,

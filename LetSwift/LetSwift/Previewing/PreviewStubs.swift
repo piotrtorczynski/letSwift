@@ -22,6 +22,10 @@ struct PreviewStubs {
         static var races: [Race] {
             return try! decoder.decode([Race].self, from: LocalJsonParsing.getJsonData(from: "races"))
         }
+
+        static var standings: CurrentDriverStandings {
+            return try! decoder.decode(CurrentDriverStandings.self, from: LocalJsonParsing.getJsonData(from: "standings"))
+        }
     }
 }
 
