@@ -32,6 +32,8 @@ final class DriverStandingsViewTests: TestCase {
         stub(mock) { mock in
             when(mock.getCurrentDriverStandings())
                 .thenReturn(subject.eraseToAnyPublisher())
+            when(mock.getDriverStatus(driverId: any()))
+                .thenReturn(PassthroughSubject<DriverStatus, Error>().eraseToAnyPublisher())
         }
 
         // Register mocks as dependencies
@@ -111,14 +113,18 @@ final class DriverStandingsViewTests: TestCase {
             subject.send(PreviewStubs.Data.standings.data.standings.standingsLists.first!.driverStandings)
             subject.send(completion: .finished)
         }
-
+        
         // Assert view elements
         XCTAssertNotNil(try view.inspect().find(viewWithId: "driver_standings_list"))
 
         // Find all lists elements of DriverRow view
         let driverRows = try view.inspect().findAll(DriverRow.self)
+        let firstDriver = driverRows[0]
+
+        XCTAssertEqual(try firstDriver.find(viewWithId: "driver_name").text().string(), "Max Verstappen")
+
         // Try to tap button on driver row
-        try driverRows[0].find(viewWithId: "button").button().tap()
+        try firstDriver.find(viewWithId: "button").button().tap()
 
         // Verify navigation destination
         switch viewModel.destination {
@@ -128,6 +134,4 @@ final class DriverStandingsViewTests: TestCase {
             XCTFail("Wrong destination")
         }
     }
-
 }
-

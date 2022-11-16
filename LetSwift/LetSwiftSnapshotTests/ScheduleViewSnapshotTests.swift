@@ -50,11 +50,12 @@ final class ScheduleViewSnapshotTests: LetSwiftSnapshotTestCase {
 
     func testLoadedView() {
         // Creates view model and set certain state
+        let races = PreviewStubs.Data.races
         let viewModel = ScheduleViewModel()
         viewModel.state = .loaded
 
-        viewModel.upcomingRaces = Array(PreviewStubs.Data.races[0...4])
-        viewModel.finishedRaces = Array(PreviewStubs.Data.races[5...21])
+        viewModel.upcomingRaces = Array(races[0...4])
+        viewModel.finishedRaces = Array(races[5...21])
 
         // Creates view with view model
         let view = ScheduleView(viewModel: viewModel)
@@ -65,11 +66,12 @@ final class ScheduleViewSnapshotTests: LetSwiftSnapshotTestCase {
 
     func testLoadedFinishedView() {
         // Creates view model and set certain state
+        let races = PreviewStubs.Data.races
         let viewModel = ScheduleViewModel()
         viewModel.state = .loaded
 
-        viewModel.upcomingRaces = Array(PreviewStubs.Data.races[0...4])
-        viewModel.finishedRaces = Array(PreviewStubs.Data.races[5...21])
+        viewModel.upcomingRaces = Array(races[0...4])
+        viewModel.finishedRaces = Array(races[5...21])
         viewModel.selectedSegment = .finished
 
         // Creates view with view model

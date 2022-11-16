@@ -45,8 +45,8 @@ final class DriverStandingsUITests: UITestCase {
 
     func testSelectingDriverDetailsOldWay() {
         XCTAssertTrue(app.staticTexts["Drivers Standings"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
-
         XCTAssertTrue(app.staticTexts["Max Verstappen"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+
         // Assert drivers displayed
         // Tap row 1
         let firstDriverRow = app.staticTexts["driver_row"].firstMatch

@@ -16,20 +16,23 @@ import XCTest
 final class ScheduleViewModelTests: TestCase {
 
     private let racesPublisher = PassthroughSubject<[Race], Error>()
+    private let driverPublisher = PassthroughSubject<DriverStatus, Error>()
 
     var sut: ScheduleViewModel!
 
     override func setUp() {
         super.setUp()
 
-        let apiMock = MockEargastAPIServiceProtocol()
+        let serviceMock = MockEargastAPIServiceProtocol()
 
-        stub(apiMock) { mock in
+        stub(serviceMock) { mock in
             when(mock.getCurrentSchedule())
                 .thenReturn(racesPublisher.eraseToAnyPublisher())
+            when(mock.getDriverStatus(driverId: any()))
+                .thenReturn(driverPublisher.eraseToAnyPublisher())
         }
 
-        Resolver.register { apiMock }
+        Resolver.register { serviceMock }
             .implements(EargastAPIServiceProtocol.self)
 
         sut = ScheduleViewModel()
@@ -46,11 +49,12 @@ final class ScheduleViewModelTests: TestCase {
             racesPublisher.send(completion: .finished)
         }
 
-        XCTAssertEqual(sut.finishedRaces.count, 20)
-        XCTAssertEqual(sut.upcomingRaces.count, 2)
+        XCTAssertEqual(sut.finishedRaces.count, 21)
+        XCTAssertEqual(sut.upcomingRaces.count, 1)
     }
 
     func testFailingSchedule() {
+
         XCTAssertEqual(sut.finishedRaces.count, 0)
         XCTAssertEqual(sut.upcomingRaces.count, 0)
 
