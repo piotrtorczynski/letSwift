@@ -14,7 +14,6 @@ import XCTest
 
 @testable import LetSwift
 
-
 /// A class to test API Service
 final class EargastAPIServiceTests: TestCase {
 
