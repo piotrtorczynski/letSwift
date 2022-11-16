@@ -15,3 +15,5 @@ extension ScheduleView: Inspectable { }
 extension TryAgainErrorView: Inspectable { }
 extension BackgroundView: Inspectable { }
 extension DriverStandingsView: Inspectable { }
+extension DriverRow: Inspectable { }
+extension RaceRow: Inspectable { }

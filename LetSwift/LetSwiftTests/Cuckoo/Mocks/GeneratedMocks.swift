@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: LetSwift/Networking/F1/Services/EargastAPIService.swift at 2022-11-15 12:10:37 +0000
+// MARK: - Mocks generated from file: LetSwift/Networking/F1/Services/EargastAPIService.swift at 2022-11-15 21:49:49 +0000
 
 //
 //  EargastAPIService.swift
@@ -171,7 +171,7 @@ import Resolver
 }
 
 
-// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/APIClient.swift at 2022-11-15 12:10:37 +0000
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/APIClient.swift at 2022-11-15 21:49:49 +0000
 
 
 import Cuckoo
@@ -273,7 +273,7 @@ public class APIClientStub: APIClient {
 }
 
 
-// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/URLRequestSending.swift at 2022-11-15 12:10:37 +0000
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/Core/URLRequestSending.swift at 2022-11-15 21:49:49 +0000
 
 //
 //  URLRequestSending.swift
@@ -413,7 +413,7 @@ public class URLRequestSendingStub: URLRequestSending {
 }
 
 
-// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/ServerEnvironment/ServerEnvironmentController.swift at 2022-11-15 12:10:37 +0000
+// MARK: - Mocks generated from file: Networking/Networking/Sources/Public/ServerEnvironment/ServerEnvironmentController.swift at 2022-11-15 21:49:49 +0000
 
 //
 //  ServerEnvironmentController.swift
