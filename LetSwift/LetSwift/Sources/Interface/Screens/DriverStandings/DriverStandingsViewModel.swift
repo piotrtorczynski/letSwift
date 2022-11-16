@@ -11,7 +11,7 @@ import SwiftUI
 
 final class DriverStandingsViewModel: ObservableObject {
 
-    @Injected var api: EargastAPIServiceProtocol
+    @Injected private var api: EargastAPIServiceProtocol
     @Injected var viewFactory: ViewFactory
 
     enum State {

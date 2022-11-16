@@ -69,6 +69,7 @@ private extension DriverAttendanceView {
     }
 
     var attendanceText: String {
-        value > 0 ? "\(value)%" : "--%"
+        let roundedValue = floor(value)
+        return roundedValue > 0 ? "\(roundedValue)%" : "--%"
     }
 }

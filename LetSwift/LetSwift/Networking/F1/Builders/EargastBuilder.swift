@@ -12,7 +12,7 @@ final class EargastBuilder: APIURLBuilder {
 
     @Injected private var serverEnvironmentProvider: ServerEnvironmentControllerProtocol
 
-    var host: String  { return serverEnvironmentProvider.environment.serverPath  }
+    var host: String  { return serverEnvironmentProvider.environment.serverPath }
     var root: String { return "api/f1" }
 
     var scheme: Scheme {

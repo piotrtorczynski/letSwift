@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-public enum TestError: Error {
+public enum TestError: Error, Equatable {
     case none
     case generic(String)
 }

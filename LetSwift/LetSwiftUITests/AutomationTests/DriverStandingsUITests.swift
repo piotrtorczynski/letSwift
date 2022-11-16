@@ -7,9 +7,9 @@
 
 import UITesting
 import SwiftUI
+import XCTest
 
 final class DriverStandingsUITests: UITestCase {
-
     private struct Paths {
         static let currentStandings = "/api/f1/current/driverStandings.json"
         static let selectedDriverStandigns = "api/f1/2022/drivers/max_verstappen/status.json?"
@@ -34,11 +34,26 @@ final class DriverStandingsUITests: UITestCase {
         // Assert drivers displayed
         // Tap row 1
         app.staticTexts["driver_row"]
-            .firstMatch.wait(until: \.exists)
+            .firstMatch
+            .wait(until: \.exists)
             .wait(until: \.isHittable)
             .tap()
 
         app.staticTexts["driver_status_attendance_view"]
             .wait(until: \.exists)
+    }
+
+    func testSelectingDriverDetailsOldWay() {
+        XCTAssertTrue(app.staticTexts["Drivers Standings"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+
+        XCTAssertTrue(app.staticTexts["Max Verstappen"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+        // Assert drivers displayed
+        // Tap row 1
+        let firstDriverRow = app.staticTexts["driver_row"].firstMatch
+        XCTAssertTrue(firstDriverRow.waitForExistence(timeout: UITestTimeout.standard.rawValue))
+        XCTAssertTrue(firstDriverRow.waitForElementToBecomeHittable(timeout: .standard))
+        firstDriverRow.tap()
+
+        XCTAssertTrue( app.staticTexts["driver_status_attendance_view"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
     }
 }

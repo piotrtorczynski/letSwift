@@ -21,4 +21,3 @@ final class EargastBuilderTests: TestCase {
         XCTAssertNil(builder.version)
     }
 }
-
