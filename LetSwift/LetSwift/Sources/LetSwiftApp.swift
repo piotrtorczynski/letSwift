@@ -21,6 +21,12 @@ struct AppLauncher {
     }
 }
 
+struct TestApp: App {
+    var body: some Scene {
+        WindowGroup { Text("Running Unit Tests") }
+    }
+}
+
 struct LetSwiftApp: App {
     init() {
         // UITests need to be run on the localUITest serverEnvironment and have animations off
@@ -39,11 +45,5 @@ struct LetSwiftApp: App {
         WindowGroup {
             TabBarView(viewModel: TabViewModel())
         }
-    }
-}
-
-struct TestApp: App {
-    var body: some Scene {
-        WindowGroup { Text("Running Unit Tests") }
     }
 }

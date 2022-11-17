@@ -248,6 +248,7 @@
 		737A208B2911BC6900C0742D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73F5ABE42917E9C8008F7BC0 /* JSONS */,
 				73E6DAA9291158730074C878 /* Assets.xcassets */,
 				73E6DAAB291158730074C878 /* LetSwift.entitlements */,
 			);
@@ -416,7 +417,6 @@
 		73BB73912916D37E0030CBA7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				73F5ABE42917E9C8008F7BC0 /* Resorces */,
 				73F5ABDB29171304008F7BC0 /* Unit */,
 				73F5ABDC2917130C008F7BC0 /* ViewTests */,
 			);
@@ -526,13 +526,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		73F5ABE42917E9C8008F7BC0 /* Resorces */ = {
+		73F5ABE42917E9C8008F7BC0 /* JSONS */ = {
 			isa = PBXGroup;
 			children = (
 				73F5ABE52917E9F5008F7BC0 /* races.json */,
 				73AFC186291D42F500AEC3F7 /* standings.json */,
 			);
-			path = Resorces;
+			path = JSONS;
 			sourceTree = "<group>";
 		};
 		73F5ABE72917EA62008F7BC0 /* Previewing */ = {

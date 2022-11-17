@@ -86,3 +86,6 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 *.xcuserstate
+
+#Cuckoo
+GeneratedMocks.swift
