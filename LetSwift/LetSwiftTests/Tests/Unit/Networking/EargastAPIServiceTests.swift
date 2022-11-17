@@ -21,7 +21,7 @@ final class EargastAPIServiceTests: TestCase {
     private var cancellable: AnyCancellable?
 
     // MARK: - Mocks
-    private let apiClient = MockAPIClient()
+    private let mockAPIClient = MockAPIClient()
 
     // MARK: - Subject under tests
 
@@ -32,7 +32,7 @@ final class EargastAPIServiceTests: TestCase {
 
         // Register local dependency to container
         // EargastAPIService uses injected APIClient instance
-        Resolver.register { self.apiClient }
+        Resolver.register { self.mockAPIClient }
             .implements(APIClient.self)
 
         sut = EargastAPIService()
@@ -43,7 +43,7 @@ final class EargastAPIServiceTests: TestCase {
         let driverStatusPublisher = PassthroughSubject<DriverStatusResponse, Error>()
 
         // Stub api client to return our publisher for certain request
-        stub(apiClient) { mock in
+        stub(mockAPIClient) { mock in
             when(mock.perform(request: any(DriverStatusRequest.self), any()))
                 .thenReturn(driverStatusPublisher.eraseToAnyPublisher())
         }
@@ -52,7 +52,7 @@ final class EargastAPIServiceTests: TestCase {
         _ = sut.getDriverStatus(driverId: "fixed_id")
 
         // check if network client called function
-        verify(apiClient, times(1)).perform(request: DriverStatusRequest(driverId: "fixed_id"), any())
+        verify(mockAPIClient, times(1)).perform(request: DriverStatusRequest(driverId: "fixed_id"), any())
     }
 
     func testGetCurrentDriverStandingsReturnsError() {
@@ -60,7 +60,7 @@ final class EargastAPIServiceTests: TestCase {
         let driverStandingsPublisher = PassthroughSubject<CurrentSeasonRequest.ReturnType, Error>()
 
         // Stub api client to return our publisher for certain request
-        stub(apiClient) { mock in
+        stub(mockAPIClient) { mock in
             when(mock.perform(request: any(CurrentSeasonRequest.self), any()))
                 .thenReturn(driverStandingsPublisher.eraseToAnyPublisher())
         }
@@ -94,7 +94,7 @@ final class EargastAPIServiceTests: TestCase {
         let driverStandingsPublisher = PassthroughSubject<CurrentDriverStandings, Error>()
 
         // Stub api client to return our publisher for certain request
-        stub(apiClient) { mock in
+        stub(mockAPIClient) { mock in
             when(mock.perform(request: any(CurrentSeasonRequest.self), any()))
                 .thenReturn(driverStandingsPublisher.eraseToAnyPublisher())
         }

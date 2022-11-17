@@ -15,7 +15,6 @@ import XCTest
 @testable import Networking
 @testable import LetSwift
 
-
 /// A class to test API Client
 final class APIClientTests: TestCase {
 
@@ -53,7 +52,6 @@ final class APIClientTests: TestCase {
         _ = apiClient.perform(request: TestRequest())
         verify(mockUrlSession, times(1)).dataTaskPublisher(for: any())
     }
-
 }
 
 private struct TestRequest: APIRequest {

@@ -24,6 +24,20 @@ final class DriverStandingsUITests: UITestCase {
         super.setUp()
     }
 
+    func testSelectingDriverDetailsOldWay() {
+        XCTAssertTrue(app.staticTexts["Drivers Standings"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+        XCTAssertTrue(app.staticTexts["Max Verstappen"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+
+        // Assert drivers displayed
+        // Tap row 1
+        let firstDriverRow = app.staticTexts["driver_row"].firstMatch
+        XCTAssertTrue(firstDriverRow.waitForExistence(timeout: UITestTimeout.standard.rawValue))
+        XCTAssertTrue(firstDriverRow.waitForElementToBecomeHittable(timeout: .standard))
+        firstDriverRow.tap()
+
+        XCTAssertTrue( app.staticTexts["driver_status_attendance_view"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
+    }
+
     func testSelectingDriverDetails() {
         app.staticTexts["Drivers Standings"]
             .wait(until: \.exists)
@@ -41,19 +55,5 @@ final class DriverStandingsUITests: UITestCase {
 
         app.staticTexts["driver_status_attendance_view"]
             .wait(until: \.exists)
-    }
-
-    func testSelectingDriverDetailsOldWay() {
-        XCTAssertTrue(app.staticTexts["Drivers Standings"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
-        XCTAssertTrue(app.staticTexts["Max Verstappen"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
-
-        // Assert drivers displayed
-        // Tap row 1
-        let firstDriverRow = app.staticTexts["driver_row"].firstMatch
-        XCTAssertTrue(firstDriverRow.waitForExistence(timeout: UITestTimeout.standard.rawValue))
-        XCTAssertTrue(firstDriverRow.waitForElementToBecomeHittable(timeout: .standard))
-        firstDriverRow.tap()
-
-        XCTAssertTrue( app.staticTexts["driver_status_attendance_view"].waitForExistence(timeout: UITestTimeout.standard.rawValue))
     }
 }

@@ -59,4 +59,3 @@ open class UITestCase: XCTestCase {
         super.tearDown()
     }
 }
-

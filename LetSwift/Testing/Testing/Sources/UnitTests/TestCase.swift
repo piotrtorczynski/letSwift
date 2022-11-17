@@ -30,6 +30,7 @@ open class TestCase: XCTestCase {
 
         action()
 
+        // assuming we know that this code will be executed after .receive(on: DispatchQueue.main)
         DispatchQueue.main.async {
             exp.fulfill()
         }

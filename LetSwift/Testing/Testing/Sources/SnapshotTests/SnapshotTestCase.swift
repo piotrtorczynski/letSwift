@@ -27,8 +27,6 @@ extension SnapshotTestCase {
 
         UIView.setAnimationsEnabled(false)
         UIApplication.shared.keyWindow?.layer.speed = 100
-
-        isRecording = false
     }
 
     func tearDownSnapshotTests() {

@@ -23,13 +23,13 @@ public struct PrimaryButton<Label>: View where Label: View {
     }
 
     public var body: some View {
-            Button(action: {
-                action?()
-            }, label: label)
-            .buttonStyle(PrimaryButtonStyle())
-            .id("button")
-            .disabled(isDisabled)
-            .frame(width: buttonWidth, height: 50)
+        Button(action: {
+            action?()
+        }, label: label)
+        .buttonStyle(PrimaryButtonStyle())
+        .id("button")
+        .disabled(isDisabled)
+        .frame(width: buttonWidth, height: 50)
     }
 }
 

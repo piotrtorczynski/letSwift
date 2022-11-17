@@ -17,4 +17,3 @@ enum NavigationDestination: Equatable, Identifiable {
     case empty
     case driverStatus(Driver)
 }
-
