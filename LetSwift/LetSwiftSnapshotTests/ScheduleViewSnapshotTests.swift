@@ -15,10 +15,6 @@ import XCTest
 @testable import LetSwift
 
 final class ScheduleViewSnapshotTests: LetSwiftSnapshotTestCase {
-
-    // Subject for API calls
-    private let subject = PassthroughSubject<[Race], Error>()
-
     override func setUp() {
         super.setUp()
 
@@ -28,7 +24,7 @@ final class ScheduleViewSnapshotTests: LetSwiftSnapshotTestCase {
         // Stub API with subject
         stub(mock) { mock in
             when(mock.getCurrentSchedule())
-                .thenReturn(subject.eraseToAnyPublisher())
+                .thenReturn(PassthroughSubject<[Race], Error>().eraseToAnyPublisher())
         }
 
         // Register mock as a depdendency
@@ -39,7 +35,6 @@ final class ScheduleViewSnapshotTests: LetSwiftSnapshotTestCase {
     func testLoadingView() {
         // Creates view model and set certain state
         let viewModel = ScheduleViewModel()
-        viewModel.state = .loading
 
         // Creates view with view model
         let view = ScheduleView(viewModel: viewModel)

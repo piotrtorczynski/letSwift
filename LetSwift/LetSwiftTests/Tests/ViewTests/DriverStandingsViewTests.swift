@@ -17,7 +17,7 @@ import XCTest
 final class DriverStandingsViewTests: TestCase {
 
     // MARK: - Subject for API
-    private let subject = PassthroughSubject<[DriverStandings], Error>()
+    private let publisher = PassthroughSubject<[DriverStandings], Error>()
 
     // MARK: - Mocks
     private let viewFactoryMock = ViewFactory()
@@ -31,13 +31,12 @@ final class DriverStandingsViewTests: TestCase {
         // Stub service call and return subject
         stub(mock) { mock in
             when(mock.getCurrentDriverStandings())
-                .thenReturn(subject.eraseToAnyPublisher())
+                .thenReturn(publisher.eraseToAnyPublisher())
             when(mock.getDriverStatus(driverId: any()))
                 .thenReturn(PassthroughSubject<DriverStatus, Error>().eraseToAnyPublisher())
         }
 
         // Register mocks as dependencies
-
         Resolver.register { mock }
             .implements(EargastAPIServiceProtocol.self)
 
@@ -71,7 +70,7 @@ final class DriverStandingsViewTests: TestCase {
 
         // send api call results
         waitForAsyncAction {
-            subject.send(completion: .failure(TestError.none))
+            publisher.send(completion: .failure(TestError.none))
         }
 
         // Assert view elements
@@ -90,8 +89,8 @@ final class DriverStandingsViewTests: TestCase {
 
         // Send success api call results
         waitForAsyncAction {
-            subject.send(PreviewStubs.Data.standings.data.standings.standingsLists.first!.driverStandings)
-            subject.send(completion: .finished)
+            publisher.send(PreviewStubs.Data.standings.data.standings.standingsLists.first!.driverStandings)
+            publisher.send(completion: .finished)
         }
 
         // Assert view elements
@@ -110,8 +109,8 @@ final class DriverStandingsViewTests: TestCase {
 
         // Send success api call results
         waitForAsyncAction {
-            subject.send(PreviewStubs.Data.standings.data.standings.standingsLists.first!.driverStandings)
-            subject.send(completion: .finished)
+            publisher.send(PreviewStubs.Data.standings.data.standings.standingsLists.first!.driverStandings)
+            publisher.send(completion: .finished)
         }
         
         // Assert view elements
